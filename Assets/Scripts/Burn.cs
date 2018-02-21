@@ -10,7 +10,7 @@ public class Burn : MonoBehaviour {
 		ingredient.yellow += ingredient.green;
 		ingredient.green = 0;
 		if (ingredient.red > 0) {
-			print("Explode!")
+			print ("Explode!");
 		}
 		
 		// Physical Interactions

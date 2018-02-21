@@ -10,7 +10,7 @@ public class Soak : MonoBehaviour {
 		ingredient.purple += ingredient.red;
 		ingredient.red = 0;
 		if (ingredient.green > 0) {
-			print("Explode!")
+			print ("Explode!");
 		}
 
 		// Physical Interactions

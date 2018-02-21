@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour {
 
 	public string form;
-	public List<string> properties;
+	//public List<string> properties; // Add later
 
 	public int red;
 	public int orange;

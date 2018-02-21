@@ -10,7 +10,7 @@ public class Dry : MonoBehaviour {
 		ingredient.green += ingredient.blue;
 		ingredient.blue = 0;
 		if (ingredient.orange > 0) {
-			print("Explode!")
+			print ("Explode!");
 		}
 
 		// Physical Interactions

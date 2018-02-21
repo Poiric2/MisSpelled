@@ -10,7 +10,7 @@ public class Freeze : MonoBehaviour {
 		ingredient.blue += ingredient.purple;
 		ingredient.purple = 0;
 		if (ingredient.yellow > 0) {
-			print("Explode!")
+			print ("Explode!");
 		}
 
 		// Physical Interactions

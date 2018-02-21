@@ -10,7 +10,7 @@ public class Crush : MonoBehaviour {
 		ingredient.red += ingredient.orange;
 		ingredient.orange = 0;
 		if (ingredient.blue > 0) {
-			print("Explode!")
+			print ("Explode!");
 		}
 
 		// Physical Interactions
