@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class freeze : MonoBehaviour {
+public class Freeze : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void freeze(ref Ingredient ingredient) {
+		if (ingredient.form == "watery") {
+			ingredient.form = "frozen";
+		}
 	}
 }

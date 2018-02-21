@@ -7,8 +7,8 @@ public class Ingredient : MonoBehaviour {
 	public string form;
 
 	// Use this for initialization
-	void Start (string form_) {
-		form = form_;
+	void Start () {
+		form = "leafy"; // everything is leafy for now -_-
 	}
 
 }
