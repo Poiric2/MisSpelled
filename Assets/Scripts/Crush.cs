@@ -5,6 +5,15 @@ using UnityEngine;
 public class Crush : MonoBehaviour {
 
 	void crush(ref Ingredient ingredient) {
+
+		// Elemental Interactions
+		ingredient.red += ingredient.orange;
+		ingredient.orange = 0;
+		if (ingredient.blue > 0) {
+			print("Explode!")
+		}
+
+		// Physical Interactions
 		if (ingredient.form == "leafy") {
 			ingredient.form = "pasty";
 		}

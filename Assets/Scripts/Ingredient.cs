@@ -5,10 +5,13 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour {
 
 	public string form;
+	public List<string> properties;
 
-	// Use this for initialization
-	void Start () {
-		form = "leafy"; // everything is leafy for now -_-
-	}
+	public int red;
+	public int orange;
+	public int yellow;
+	public int green;
+	public int blue;
+	public int purple;
 
 }

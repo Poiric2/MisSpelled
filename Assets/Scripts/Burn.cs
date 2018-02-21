@@ -5,7 +5,15 @@ using UnityEngine;
 public class Burn : MonoBehaviour {
 
 	void burn(ref Ingredient ingredient) {
+
+		// Elemental Interactions
+		ingredient.yellow += ingredient.green;
+		ingredient.green = 0;
+		if (ingredient.red > 0) {
+			print("Explode!")
+		}
 		
+		// Physical Interactions
 		if (ingredient.form == "leafy") {
 			ingredient.form = "burnt";
 		}
