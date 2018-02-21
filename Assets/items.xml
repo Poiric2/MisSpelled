@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemDatabase>
+    <Items>
+        <item name="Belladonna">
+            <desc>The foliage and berries of deadly nightshade</desc>
+            <form>leafy</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">1</element>
+                <element color="blue">1</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>poisonous</adjective>
+            </adjectives>
+        </item>
+
+        <item name="Ginseng">
+            <desc>A fleshy root used for herbal remedies</desc>
+            <form>squishy</form>
+            <elements>
+                <element color="red">1</element>
+                <element color="orange">1</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>hearty</adjective>
+                <adjective>mundane</adjective>
+            </adjectives>
+        </item>
+
+        <item name="Frog Eyes">
+            <desc>Eyes extracted from the common frog</desc>
+            <form>squishy</form>
+            <elements>
+                <element color="red">1</element>
+                <element color="orange">0</element>
+                <element color="yellow">1</element>
+                <element color="green">0</element>
+                <element color="blue">1</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>aromatic</adjective>
+                <adjective>poisonous</adjective>
+            </adjectives>
+        </item>
+
+        <item name="Lemon Zest">
+            <desc>Colorful shavings from the peel of a lemon</desc>
+            <form>leafy</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">2</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>aromatic</adjective>
+                <adjective>mundane</adjective>
+            </adjectives>
+        </item>
+
+        <item name="Pigeon Claw">
+            <desc>Toe nail removed from an urban pigeon</desc>
+            <form>solid</form>
+            <elements>
+                <element color="red">1</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">1</element>
+            </elements>
+            <adjectives>
+                <adjective>hearty</adjective>
+                <adjective>angry</adjective>
+            </adjectives>
+        </item>
+
+        <item name="Lotus">
+            <desc>An aquatic flowery plant</desc>
+            <form>leafy</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">2</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>aromatic</adjective>
+            </adjectives>
+        </item>
+    </Items>
+</ItemDatabase>
