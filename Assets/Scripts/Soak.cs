@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class soak : MonoBehaviour {
+public class Soak : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void soak(ref Ingredient ingredient) {
+		if (ingredient.form == "pasty") {
+			ingredient.form = "watery";
+		}
+
+		if (ingredient.form == "powdery") {
+			ingredient.form = "watery";
+		}
+
+		if (ingredient.form == "brittle") {
+			ingredient.form = "squishy";
+		}
+
+		if (ingredient.form == "burnt") {
+			ingredient.form = "murky";
+		}
 	}
 }
