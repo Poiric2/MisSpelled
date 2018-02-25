@@ -100,5 +100,283 @@
                 <adjective>aromatic</adjective>
             </adjectives>
         </item>
+    
+    <item name="Lavender">
+            <desc>A pleasant fragrant herb</desc>
+            <form>Leafy</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">1</element>
+                <element color="blue">0</element>
+                <element color="purple">2</element>
+            </elements>
+            <adjectives>
+                <adjective>Aromatic</adjective>
+            </adjectives>
+        </item>
+    
+<item name="Sage">
+            <desc>A potent medicinal herb</desc>
+            <form>Leafy</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">1</element>
+                <element color="green">1</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Spectral</adjective>
+                <adjective>Mundane</adjective>
+            </adjectives>
+        </item>
+
+<item name="Willow Bark">
+            <desc>Pieces from the outer layer of a willow tree</desc>
+            <form>Solid</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">1</element>
+                <element color="yellow">1</element>
+                <element color="green">1</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Hearty</adjective>
+                <adjective>Wooden</adjective>
+            </adjectives>
+        </item>
+
+<item name="Baby Tears">
+            <desc>Sadness extracted from human spawn</desc>
+            <form>Watery</form>
+            <elements>
+                <element color="red">1</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">1</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Spectral</adjective>
+                <adjective>Angry</adjective>
+            </adjectives>
+        </item>
+
+<item name="Bat Wing">
+            <desc>Flying-appendage taken from a bat</desc>
+            <form>Meaty</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">1</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">1</element>
+            </elements>
+            <adjectives>
+                <adjective>Angry</adjective>
+            </adjectives>
+        </item>
+
+<item name="Chicken Teeth">
+            <desc>Pointed oral fixtures from the common chicken</desc>
+            <form>Solid</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">1</element>
+                <element color="blue">1</element>
+                <element color="purple">1</element>
+            </elements>
+            <adjectives>
+                <adjective>Angry</adjective>
+                <adjective>Hearty</adjective>
+            </adjectives>
+        </item>
+
+<item name="Dragon Egg">
+            <desc>Newly-laid egg removed from a dragon’s nest</desc>
+            <form>Solid</form>
+            <elements>
+                <element color="red">2</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">1</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Volatile</adjective>
+                <adjective>Draconic</adjective>
+            </adjectives>
+        </item>
+    
+<item name="Leviathan Milk">
+            <desc>Nourishing liquid pumped from a sleeping Leviathan</desc>
+            <form>Watery</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">1</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">1</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Volatile</adjective>
+                <adjective>Demonic</adjective>
+            </adjectives>
+        </item>
+
+<item name="Fly Wings">
+            <desc>Flying-appendage taken from a household fly</desc>
+            <form>Squishy</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">1</element>
+                <element color="purple">1</element>
+            </elements>
+            <adjectives>
+                <adjective>Mundane</adjective>
+            </adjectives>
+        </item>
+
+<item name="Newt Tail">
+            <desc>The furthest extremity plucked from a newt</desc>
+            <form>Squishy</form>
+            <elements>
+                <element color="red">1</element>
+                <element color="orange">1</element>
+                <element color="yellow">1</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Hearty</adjective>
+            </adjectives>
+        </item>
+
+<item name="Spider Juice">
+            <desc>Liquid extracted from a humanely crushed spider</desc>
+            <form>Watery</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">2</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">1</element>
+            </elements>
+            <adjectives>
+                <adjective>Gross</adjective>
+                <adjective>Poisonous</adjective>
+            </adjectives>
+        </item>
+
+<item name="Troll Fat">
+            <desc>Collected blubber from troll-based liposuction</desc>
+            <form>Pasty</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">1</element>
+                <element color="green">0</element>
+                <element color="blue">2</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Gross</adjective>
+            </adjectives>
+        </item>
+
+<item name="Worm Resin">
+            <desc>Substance removed from a tapped worm</desc>
+            <form>Pasty</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">0</element>
+                <element color="yellow">2</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+                <adjective>Gross</adjective>
+                <adjective>Hearty</adjective>
+            </adjectives>
+        </item>
+
+<item name="Chromatic Resin">
+            <desc>?</desc>
+            <form>Powdery</form>
+            <elements>
+                <element color="red">1</element>
+                <element color="orange">1</element>
+                <element color="yellow">1</element>
+                <element color="green">1</element>
+                <element color="blue">1</element>
+                <element color="purple">1</element>
+            </elements>
+            <adjectives>
+                <adjective>immutable</adjective>
+                <adjective>Legendary</adjective>
+            </adjectives>
+        </item>
+
+<item name="Essence of Rust">
+            <desc>Fine remains from pure rust</desc>
+            <form>Powdery</form>
+            <elements>
+                <element color="red">1</element>
+                <element color="orange">1</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+            </adjectives>
+        </item>
+
+<item name="Lead Shaving">
+            <desc>Metallic shards of lead</desc>
+            <form>Powdery</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">3</element>
+                <element color="yellow">0</element>
+                <element color="green">0</element>
+                <element color="blue">0</element>
+                <element color="purple">0</element>
+            </elements>
+            <adjectives>
+            </adjectives>
+        </item>
+
+<item name="Gold Leaf">
+            <desc>Leaf delicately dusted with gold paint</desc>
+            <form>Leafy</form>
+            <elements>
+                <element color="red">0</element>
+                <element color="orange">1</element>
+                <element color="yellow">0</element>
+                <element color="green">1</element>
+                <element color="blue">0</element>
+                <element color="purple">1</element>
+            </elements>
+            <adjectives>
+            </adjectives>
+        </item>
     </Items>
 </ItemDatabase>
