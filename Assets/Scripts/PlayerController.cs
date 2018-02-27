@@ -37,8 +37,9 @@ public class PlayerController : MonoBehaviour {
 
     void SwapMovementState(){
        canMove = !canMove;
-       camLook.canLook = !camLook.canLook;
        canInteract = !canInteract;
+       if (camLook.canLook == false)
+         camLook.EndLerp();
     }
 
     void Interact(){
@@ -48,11 +49,8 @@ public class PlayerController : MonoBehaviour {
             if (hit.transform.tag == "interactable"){
                 print("interact");
                 SwapMovementState();
-                camLook.anchor = new Vector3(3f,2.4f,-.5f);
-                camLook.anchorRot = new Vector3(30f, 90f, 0f);
-                camLook.camPos = Camera.main.transform.position;
-                transform.position = new Vector3(3f, 1.5f, -.5f);
-                }
+                camLook.StartLerp(new Vector3(3f, 2.4f, -.5f), new Vector3(30f, 90f, 0f));
+            }
         }
     }
 }

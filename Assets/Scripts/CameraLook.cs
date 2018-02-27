@@ -47,16 +47,35 @@ public class CameraLook : MonoBehaviour {
     }
 
     void LerpToAnchor(){
+        
+    
+        print(transform.localRotation.eulerAngles.x);
+        print(character.transform.localRotation.eulerAngles.y);
+        print(anchorRot);
         mouseLook.y = Mathf.Lerp(mouseLook.y, anchorRot.x, anchorLerpSpeed);
         mouseLook.x = Mathf.Lerp(mouseLook.x, anchorRot.y, anchorLerpSpeed);
 
-       camPos.x = Mathf.Lerp(camPos.x, anchor.x, anchorLerpSpeed);
-       camPos.y = Mathf.Lerp(camPos.y, anchor.y, anchorLerpSpeed);
-       camPos.z = Mathf.Lerp(camPos.z, anchor.z, anchorLerpSpeed);
+        camPos.x = Mathf.Lerp(camPos.x, anchor.x, anchorLerpSpeed);
+        camPos.y = Mathf.Lerp(camPos.y, anchor.y, anchorLerpSpeed);
+        camPos.z = Mathf.Lerp(camPos.z, anchor.z, anchorLerpSpeed);
 
-        transform.localRotation = Quaternion.Euler(mouseLook.y, 0f,0f);
-        character.transform.localRotation = Quaternion.Euler(0f,mouseLook.x,0f);
+        transform.localRotation = Quaternion.Euler(mouseLook.y, 0f, 0f);
+        character.transform.localRotation = Quaternion.Euler(0f, mouseLook.x, 0f);
 
-        transform.position = new Vector3(camPos.x,camPos.y,camPos.z);
+        transform.position = new Vector3(camPos.x, camPos.y, camPos.z);
+    }
+
+    public void StartLerp(Vector3 pos, Vector3 rot){
+        anchor = pos;
+        anchorRot = rot;
+        camPos = transform.position;
+        canLook = false;
+        character.transform.position = new Vector3(anchor.x, 1.5f, anchor.z);
+        character.GetComponent<MeshRenderer>().enabled = false;
+    }
+
+    public void EndLerp(){
+        character.GetComponent<MeshRenderer>().enabled = true;
+        canLook = true;
     }
 }
