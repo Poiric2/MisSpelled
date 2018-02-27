@@ -118,7 +118,7 @@
         </item>
     
 <item name="Sage">
-            <desc>A potent medicinal herb</desc>
+            <desc>A potent herb ideal for deterring vile spirits</desc>
             <form>Leafy</form>
             <elements>
                 <element color="red">0</element>
@@ -152,7 +152,7 @@
         </item>
 
 <item name="Baby Tears">
-            <desc>Sadness extracted from human spawn</desc>
+            <desc>Sadness extracted from human infants</desc>
             <form>Watery</form>
             <elements>
                 <element color="red">1</element>
@@ -219,7 +219,7 @@
         </item>
     
 <item name="Leviathan Milk">
-            <desc>Nourishing liquid pumped from a sleeping Leviathan</desc>
+            <desc>Nourishing liquid wrested from a sleeping Leviathan</desc>
             <form>Watery</form>
             <elements>
                 <element color="red">0</element>
@@ -285,7 +285,7 @@
         </item>
 
 <item name="Troll Fat">
-            <desc>Collected blubber from troll-based liposuction</desc>
+            <desc>Condensed blubber obtained from troll cosmetic procedure(s)</desc>
             <form>Pasty</form>
             <elements>
                 <element color="red">0</element>
