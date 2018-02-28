@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour {
     private bool canMove = true;
     private CameraLook camLook;
     private bool canInteract = true;
+    private Inventory inventory;
 
 	// Use this for initialization
 	void Start () {
         Cursor.lockState = CursorLockMode.Locked;
         camLook = GetComponentInChildren<CameraLook>();
+        inventory = GetComponent<Inventory>();
     }
 	
 	// Update is called once per frame
@@ -51,6 +53,11 @@ public class PlayerController : MonoBehaviour {
                 Station station = hit.transform.gameObject.GetComponent<Station>();
                 camLook.StartLerp(station.anchor, station.anchorRot);
                 station.StartMode();
+            }
+            else if(hit.transform.tag == "pickup")
+            {
+                inventory.Add(hit.transform.GetComponent<Pickup>().ingredient);
+                Destroy(hit.transform.gameObject);
             }
         }
     }
