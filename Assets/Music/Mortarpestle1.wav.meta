@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d59fae1bb9404074f91506ff9b845939
 timeCreated: 1519789217
+=======
+guid: a8d2481e3826e2e458b1563700657e96
+timeCreated: 1519842844
+>>>>>>> devCole
 licenseType: Free
 AudioImporter:
   externalObjects: {}
