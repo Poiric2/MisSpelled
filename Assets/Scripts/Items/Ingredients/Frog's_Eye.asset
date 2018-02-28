@@ -11,11 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Frog's_Eye
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  form: 
-  red: 0
+  sprite: {fileID: 21300000, guid: 9b4f23d3fbd843d45bc82ffa26f51eba, type: 3}
+  form: squishy
+  red: 1
   orange: 0
-  yellow: 0
+  yellow: 1
   green: 0
-  blue: 0
+  blue: 1
   purple: 0
