@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   form: 
-  red: 0
-  orange: 0
+  red: 12
+  orange: 12
   yellow: 0
   green: 0
   blue: 0

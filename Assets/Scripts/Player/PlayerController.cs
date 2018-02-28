@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     private CameraLook camLook;
     private bool canInteract = true;
     private Inventory inventory;
+    private Station currStation;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +43,10 @@ public class PlayerController : MonoBehaviour {
        canInteract = !canInteract;
        if (camLook.canLook == false)
          camLook.EndLerp();
+       if (currStation != null) {
+         currStation.EndMode();
+         currStation = null;
+       }
     }
 
     void Interact(){
@@ -50,9 +55,9 @@ public class PlayerController : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, interactDistance)){
             if (hit.transform.tag == "interactable"){
                 SwapMovementState();
-                Station station = hit.transform.gameObject.GetComponent<Station>();
-                camLook.StartLerp(station.anchor, station.anchorRot);
-                station.StartMode();
+                currStation = hit.transform.gameObject.GetComponent<Station>();
+                camLook.StartLerp(currStation.anchor, currStation.anchorRot);
+                currStation.StartMode(inventory);
             }
             else if(hit.transform.tag == "pickup")
             {

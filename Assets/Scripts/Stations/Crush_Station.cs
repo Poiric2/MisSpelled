@@ -11,12 +11,12 @@ public class Crush_Station : Station {
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
+	override protected void Update () {
+        base.Update();
 	}
 
 	void Crush(ref Ingredient ingredient) {
-
+        print(ingredient.red + ":" + ingredient.orange);
 		// Elemental Interactions
 		ingredient.red += ingredient.orange;
 		ingredient.orange = 0;
@@ -49,4 +49,21 @@ public class Crush_Station : Station {
 			ingredient.form = "powdery";
 		}
 	}
+
+    public override void StartMode(Inventory inv)
+    {
+        base.StartMode(inv);
+    }
+
+    protected override void Work()
+    {
+        base.Work();
+        if (Input.GetKeyDown(KeyCode.C))
+            Crush(ref ingredient);
+    }
+
+    public override void EndMode()
+    {
+        base.EndMode();
+    }
 }
