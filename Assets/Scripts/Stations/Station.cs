@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Station : MonoBehaviour {
 
-    public Vector3 anchor = new Vector3(3f,2.4f,-.5f);
-    public Vector3 anchorRot = new Vector3(30f,90f,0f);
+    public Vector3 anchor;
+    public Vector3 anchorRot;
 
     // Use this for initialization
     void Start () {
@@ -16,4 +16,8 @@ public class Station : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public virtual void StartMode(){
+
+    }
 }

@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
             transform.Translate(strafe, 0, forward);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.L))
             SwapMovementState();
 
         if (Input.GetKeyDown(KeyCode.E) && canInteract)
@@ -47,9 +47,10 @@ public class PlayerController : MonoBehaviour {
 
         if (Physics.Raycast(ray, out hit, interactDistance)){
             if (hit.transform.tag == "interactable"){
-                print("interact");
                 SwapMovementState();
-                camLook.StartLerp(new Vector3(3f, 2.4f, -.5f), new Vector3(30f, 90f, 0f));
+                Station station = hit.transform.gameObject.GetComponent<Station>();
+                camLook.StartLerp(station.anchor, station.anchorRot);
+                station.StartMode();
             }
         }
     }

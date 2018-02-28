@@ -11,6 +11,7 @@ public class CameraLook : MonoBehaviour {
     public float sensitivity = 5.0f;
     public float smooth = 2.0f;
     public float anchorLerpSpeed = .05f;
+    public Vector2 camRot;
     public Vector3 camPos;
     public Vector3 anchor;
     public Vector3 anchorRot;
@@ -47,20 +48,15 @@ public class CameraLook : MonoBehaviour {
     }
 
     void LerpToAnchor(){
-        
-    
-        print(transform.localRotation.eulerAngles.x);
-        print(character.transform.localRotation.eulerAngles.y);
-        print(anchorRot);
-        mouseLook.y = Mathf.Lerp(mouseLook.y, anchorRot.x, anchorLerpSpeed);
-        mouseLook.x = Mathf.Lerp(mouseLook.x, anchorRot.y, anchorLerpSpeed);
+        camRot.y = Mathf.Lerp(camRot.y, anchorRot.x, anchorLerpSpeed);
+        camRot.x = Mathf.Lerp(camRot.x, anchorRot.y, anchorLerpSpeed);
 
         camPos.x = Mathf.Lerp(camPos.x, anchor.x, anchorLerpSpeed);
         camPos.y = Mathf.Lerp(camPos.y, anchor.y, anchorLerpSpeed);
         camPos.z = Mathf.Lerp(camPos.z, anchor.z, anchorLerpSpeed);
 
-        transform.localRotation = Quaternion.Euler(mouseLook.y, 0f, 0f);
-        character.transform.localRotation = Quaternion.Euler(0f, mouseLook.x, 0f);
+        transform.localRotation = Quaternion.Euler(camRot.y, 0f, 0f);
+        character.transform.localRotation = Quaternion.Euler(0f, camRot.x, 0f);
 
         transform.position = new Vector3(camPos.x, camPos.y, camPos.z);
     }
@@ -69,6 +65,8 @@ public class CameraLook : MonoBehaviour {
         anchor = pos;
         anchorRot = rot;
         camPos = transform.position;
+        camRot.y = transform.localRotation.eulerAngles.x;
+        camRot.x = character.transform.localRotation.eulerAngles.y;
         canLook = false;
         character.transform.position = new Vector3(anchor.x, 1.5f, anchor.z);
         character.GetComponent<MeshRenderer>().enabled = false;
