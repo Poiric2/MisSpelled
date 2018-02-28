@@ -20,4 +20,8 @@ public class Station : MonoBehaviour {
     public virtual void StartMode(){
 
     }
+
+	protected void Explode() {
+		print ("Explode!");
+	}
 }

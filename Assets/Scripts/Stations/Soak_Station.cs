@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Soakk_Station : Station {
+public class Soak_Station : Station {
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +21,7 @@ public class Soakk_Station : Station {
 		ingredient.purple += ingredient.red;
 		ingredient.red = 0;
 		if (ingredient.green > 0) {
-			print ("Explode!");
+			base.Explode ();
 		}
 
 		// Physical Interactions

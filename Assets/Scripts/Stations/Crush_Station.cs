@@ -21,7 +21,7 @@ public class Crush_Station : Station {
 		ingredient.red += ingredient.orange;
 		ingredient.orange = 0;
 		if (ingredient.blue > 0) {
-			print ("Explode!");
+			base.Explode ();
 		}
 
 		// Physical Interactions
