@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour {
 
-    public Ingredient ingredient;
+    public Item item;
 
 	// Use this for initialization
 	void Start () {

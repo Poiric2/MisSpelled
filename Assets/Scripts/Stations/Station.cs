@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Station : MonoBehaviour {
@@ -12,9 +13,16 @@ public class Station : MonoBehaviour {
 
     bool working = false;
 
+    public string st_name;
+    public string description;
+
+    public GameObject StationUI;
+    public Text title;
+    public Text dsc;
+
     // Use this for initialization
     void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -27,25 +35,21 @@ public class Station : MonoBehaviour {
         Cursor.lockState = CursorLockMode.None;
         inventory = inv;
         working = true;
+        title.text = st_name;
+        dsc.text = description;
+        StationUI.SetActive(true);
+        inventory.Display();
     }
 
     protected virtual void Work()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && inventory.items[0]!= null)
+        for(int i = 0; i < Inventory.inventorySize; i++)
         {
-            ingredient = (Ingredient)inventory.items[0];
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && inventory.items[1] != null)
-        {
-            ingredient = (Ingredient)inventory.items[1];
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && inventory.items[2] != null)
-        {
-            ingredient = (Ingredient)inventory.items[2];
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4) && inventory.items[3] != null)
-        {
-            ingredient = (Ingredient)inventory.items[3];
+            if (Input.GetMouseButtonDown(0) && inventory.items[i] != null && inventory.primes[i].enabled)
+            {
+                ingredient = (Ingredient)inventory.items[i];
+                inventory.Highlight(i);
+            }
         }
     }
 
@@ -53,6 +57,9 @@ public class Station : MonoBehaviour {
     {
         Cursor.lockState = CursorLockMode.Locked;
         working = false;
+        StationUI.SetActive(false);
+        inventory.Clear();
+        inventory.Hide();
     }
 
 	protected void Explode() {

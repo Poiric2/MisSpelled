@@ -9,13 +9,14 @@ public class Soak_Station : Station {
         anchor = new Vector3(-.5f, 2.4f, -3f);
         anchorRot = new Vector3(30f, 180f, 0f);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-	void Soak(ref Ingredient ingredient) {
+    // Update is called once per frame
+    protected override void Update()
+    {
+        base.Update();
+    }
+
+    void Soak(ref Ingredient ingredient) {
 
 		// Elemental Interactions
 		ingredient.purple += ingredient.red;
