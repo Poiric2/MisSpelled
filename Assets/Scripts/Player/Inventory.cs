@@ -5,23 +5,29 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public Image[] images = new Image[4];
-    public Item[] items = new Item[4];
+    public const int inventorySize = 16;
+    public GameObject InvDisp;
 
+    public Image[] images = new Image[inventorySize];
+    public Image[] highlights = new Image[inventorySize];
+    public Image[] primes = new Image[inventorySize];
+    public Item[] items = new Item[inventorySize];
+
+    int currHighlight = 0;
+    public bool open = false;
+    
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void Add(Item x){
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < inventorySize; i++){
             if(items[i] == null){
                 items[i] = x;
                 images[i].sprite = x.sprite;
@@ -33,14 +39,15 @@ public class Inventory : MonoBehaviour
 
     public void Remove(Item x)
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < inventorySize; i++)
         {
             if (items[i] == x)
             {
                 items[i] = null;
                 images[i].sprite = null;
                 images[i].enabled = false;
-                //UpdateInventory();
+                highlights[i].enabled = false;
+                UpdateInventory();
                 return;
             }
         }
@@ -48,7 +55,7 @@ public class Inventory : MonoBehaviour
 
     void UpdateInventory()
     {
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < inventorySize-1; i++)
         {
             if(items[i] == null && items[i+1] != null)
             {
@@ -60,5 +67,51 @@ public class Inventory : MonoBehaviour
                 images[i + 1].enabled = false;
             }
         }
+    }
+
+    public void Highlight(int i)
+    {
+        highlights[currHighlight].enabled = false;
+        if (highlights[i] != null)
+        {
+            highlights[i].enabled = true;
+        }
+        currHighlight = i;
+    }
+
+    public void Clear()
+    {
+        highlights[currHighlight].enabled = false;
+    }
+
+    public void Prime(int i)
+    {
+        if (primes[i] != null)
+        {
+            primes[i].enabled = true;
+        }
+    }
+
+    public void UnPrime(int i)
+    {
+        if (primes[i] != null)
+        {
+            primes[i].enabled = false;
+        }
+    }
+    public void Display()
+    {
+        InvDisp.SetActive(true);
+        open = true;
+    }
+    public void Hide()
+    {
+        InvDisp.SetActive(false);
+        open = false;
+    }
+    public void Switch()
+    {
+        InvDisp.SetActive(!InvDisp.activeSelf);
+        open = !open;
     }
 }

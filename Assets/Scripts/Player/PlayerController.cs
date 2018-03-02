@@ -36,7 +36,26 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.E) && canInteract)
             Interact();
-	}
+
+        if (Input.GetKeyDown(KeyCode.I))
+            inventory.Switch();
+
+        if (inventory.open)
+            for (int i = 0; i < Inventory.inventorySize; i++)
+            {
+                if (Input.mousePosition.x > inventory.images[i].transform.position.x - 32 &&
+                   Input.mousePosition.x < inventory.images[i].transform.position.x + 32 &&
+                   Input.mousePosition.y > inventory.images[i].transform.position.y - 32 &&
+                   Input.mousePosition.y < inventory.images[i].transform.position.y + 32)
+                {
+                    inventory.Prime(i);
+                }
+                else
+                {
+                    inventory.UnPrime(i);
+                }
+            }
+    }
 
     void SwapMovementState(){
        canMove = !canMove;
@@ -61,7 +80,7 @@ public class PlayerController : MonoBehaviour {
             }
             else if(hit.transform.tag == "pickup")
             {
-                inventory.Add(hit.transform.GetComponent<Pickup>().ingredient);
+                inventory.Add(hit.transform.GetComponent<Pickup>().item);
                 Destroy(hit.transform.gameObject);
             }
         }

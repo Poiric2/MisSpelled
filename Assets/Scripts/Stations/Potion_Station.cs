@@ -9,9 +9,10 @@ public class Potion_Station : Station {
 		anchor = new Vector3(3f, 2.4f, -.5f);
         anchorRot = new Vector3(30f, 90f, 0f);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        base.Update();
+    }
 }
