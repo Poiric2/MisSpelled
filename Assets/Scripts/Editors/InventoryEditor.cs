@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-/*
+
 [CustomEditor (typeof(Inventory))]
 public class InventoryEditor : Editor {
 
@@ -59,4 +59,3 @@ public class InventoryEditor : Editor {
         EditorGUILayout.EndVertical();
     }
 }
-*/
