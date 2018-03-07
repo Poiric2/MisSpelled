@@ -8,11 +8,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24ad826e24d00f748a6b6f5330d15c88, type: 3}
-  m_Name: Letter
+  m_Script: {fileID: 11500000, guid: 6fdecef0309e9c44eb370060f97f7678, type: 3}
+  m_Name: Benign Elixre
   m_EditorClassIdentifier: 
-  title: 3
-  pgs:
-  - Gotta
-  - Have
-  - It
+  sprite: {fileID: 0}
+  red: 3
+  orange: 0
+  yellow: 2
+  green: 0
+  blue: 0
+  purple: 0

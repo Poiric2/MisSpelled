@@ -4,7 +4,41 @@ timeCreated: 1519230848
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group
+    100004: pasted__pCylinder1
+    100006: pasted__pHelix1
+    100008: pasted__transform1
+    100010: pasted__transform2
+    100012: pCylinder1
+    100014: pCylinder3
+    100016: pCylinder4
+    100018: pHelix1
+    100020: transform1
+    100022: transform2
+    400000: //RootNode
+    400002: group
+    400004: pasted__pCylinder1
+    400006: pasted__pHelix1
+    400008: pasted__transform1
+    400010: pasted__transform2
+    400012: pCylinder1
+    400014: pCylinder3
+    400016: pCylinder4
+    400018: pHelix1
+    400020: transform1
+    400022: transform2
+    2100000: lambert4
+    2100002: lambert2
+    2300000: pCylinder3
+    2300002: pCylinder4
+    3300000: pCylinder3
+    3300002: pCylinder4
+    4300000: pCylinder3
+    4300002: pCylinder4
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1

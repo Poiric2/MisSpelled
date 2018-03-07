@@ -11,7 +11,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ad826e24d00f748a6b6f5330d15c88, type: 3}
   m_Name: Book2
   m_EditorClassIdentifier: 
+  title: Catalog
   pgs:
-  - This
-  - Is
-  - Fun
+  - 'Nightshade  The foliage and berries of Deadly Nightshade.  Physical Properties:
+    Leafy  Elemental Properties: G1B1  Chemical Properties: Poisonous '
+  - 'Ginseng  A fleshy root used for herbal remedies.  Physical Properties: Squishy  Elemental
+    Properties: R1O1  Chemical Properties: Hearty, Mundane'
+  - 'Frog Eyes  Eyes extracted from the common frog.  Physical Properties: Squishy  Elemental
+    Properties: R1Y1B1  Chemical Properties: Aromatic, Poisonous'
+  - 'Lemon Zest  Colorful shavings from the peel of a lemon.  Physical Properties:
+    Leafy  Elemental Properties: G2  Chemical Properties: Aromatic, Mundane'
+  - 'Pigeon Claw  Toenail removed from an urban pigeon.  Physical Properties: Solid  Elemental
+    Properties: R1P1  Chemical Properties: Hearty, Angry '

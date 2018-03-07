@@ -15,8 +15,9 @@ public class Crush_Station : Station {
 	}
 
     protected override void  Job(ref Ingredient ingredient) {
-		// Elemental Interactions
-		ingredient.red += ingredient.orange;
+        base.Job(ref ingredient);
+        // Elemental Interactions
+        ingredient.red += ingredient.orange;
 		ingredient.orange = 0;
 		if (ingredient.blue > 0) {
 			base.Explode ();

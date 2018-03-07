@@ -11,5 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ad826e24d00f748a6b6f5330d15c88, type: 3}
   m_Name: Tome
   m_EditorClassIdentifier: 
+  title: 5
   pgs:
   - Just this

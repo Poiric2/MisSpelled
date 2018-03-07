@@ -19,6 +19,14 @@ public class Inventory : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        for(int i = 0; i < 16; i++)
+        {
+            if (items[i] != null)
+            {
+                images[i].sprite = items[i].sprite;
+                images[i].enabled = true;
+            }  
+        }
     }
 
     // Update is called once per frame
@@ -60,10 +68,9 @@ public class Inventory : MonoBehaviour
             if(items[i] == null && items[i+1] != null)
             {
                 items[i] = items[i + 1];
-                images[i] = images[i + 1];
+                images[i].sprite = items[i].sprite;
                 images[i].enabled = true;
                 items[i + 1] = null;
-                images[i + 1] = null;
                 images[i + 1].enabled = false;
             }
         }

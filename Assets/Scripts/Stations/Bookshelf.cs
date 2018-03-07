@@ -8,6 +8,8 @@ public class Bookshelf : Station {
     public GameObject BookView;
     public Text pg1;
     public Text pg2;
+    public Text Title1;
+    public Text Title2;
 
     int currPage;
     int currBook;
@@ -77,6 +79,8 @@ public class Bookshelf : Station {
                 pg2.text = (string)Books[currBook].pgs[1];
             else
                 pg2.text = "";
+            Title1.text = (string)Books[currBook].title;
+            Title2.text = (string)Books[currBook].title;
         }
     }
 
@@ -91,6 +95,8 @@ public class Bookshelf : Station {
                 pg2.text = (string)Books[currBook].pgs[1];
             else
                 pg2.text = "";
+            Title1.text = (string)Books[currBook].title;
+            Title2.text = (string)Books[currBook].title;
         }
     }
 
@@ -103,6 +109,8 @@ public class Bookshelf : Station {
         pg1.text = (string)Books[0].pgs[0];
         if (Books[0].pgs.Count > 1)
             pg2.text = (string)Books[0].pgs[1];
+        Title1.text = (string)Books[0].title;
+        Title2.text = (string)Books[0].title;
         BookView.SetActive(true);
     }
 

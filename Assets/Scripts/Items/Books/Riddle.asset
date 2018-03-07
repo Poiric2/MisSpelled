@@ -11,46 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ad826e24d00f748a6b6f5330d15c88, type: 3}
   m_Name: Riddle
   m_EditorClassIdentifier: 
+  title: Poem?
   pgs:
-  - "To be fair, you have to have a very high IQ to understand Rick and Morty. The
-    humour is extremely subtle, and without a solid grasp of theoretical physics most
-    of the jokes will go over a typical viewer\u2019s head. There\u2019s also Rick\u2019s
-    nihilistic outlook, which is deftly woven into his characterisation- his personal
-    philosophy draws heavily from Narodnaya Volya literature, for instance. The fans
-    understand this stuff; they have the intellectual capacity to truly appreciate
-    the depths of these jokes, to realise that they\u2019re not just funny- they say
-    something deep about LIFE. As a consequence people who dislike Rick & Morty truly
-    ARE idiots- of course they wouldn\u2019t appreciate, for instance, the humour
-    in Rick\u2019s existential catchphrase \u201CWubba Lubba Dub Dub,\u201D which
-    itself is a cryptic reference to Turgenev\u2019s Russian epic Fathers and Sons.
-    I\u2019m smirking right now just imagining one of those addlepated simpletons
-    scratching their heads in confusion as Dan Harmon\u2019s genius wit unfolds itself
-    on their television screens. What fools.. how I pity them."
-  - "What the fuck did you just fucking say about me, you little bitch? I\u2019ll
-    have you know I graduated top of my class in the Navy Seals, and I\u2019ve been
-    involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed
-    kills. I am trained in gorilla warfare and I\u2019m the top sniper in the entire
-    US armed forces. You are nothing to me but just another target. I will wipe you
-    the fuck out with precision the likes of which has never been seen before on this
-    Earth, mark my fucking words. You think you can get away with saying that shit
-    to me over the Internet? Think again, fucker. As we speak I am contacting my secret
-    network of spies across the USA and your IP is being traced right now so you better
-    prepare for the storm, maggot. The storm that wipes out the pathetic little thing
-    you call your life. You\u2019re fucking dead, kid. I can be anywhere, anytime,
-    and I can kill you in over seven hundred ways, and that\u2019s just with my bare
-    hands. Not only am I extensively trained in unarmed combat, but I have access
-    to the entire arsenal of the United States Marine Corps and I will use it to its
-    full extent to wipe your miserable ass off the face of the continent, you little
-    shit. If only you could have known what unholy retribution your little \u201Cclever\u201D
-    comment was about to bring down upon you, maybe you would have held your fucking
-    tongue. But you couldn\u2019t, you didn\u2019t, and now you\u2019re paying the
-    price, you goddamn idiot. I will shit fury all over you and you will drown in
-    it. You\u2019re fucking dead, kiddo."
-  - My Grandfather smoked his whole life. I was about 10 years old when my mother
-    said to him, 'If you ever want to see your grandchildren graduate, you have to
-    stop immediately.'. Tears welled up in his eyes when he realized what exactly
-    was at stake. He gave it up immediately. Three years later he died of lung cancer.
-    It was really sad and destroyed me. My mother said to me- 'Don't ever smoke. Please
-    don't put your family through what your Grandfather put us through." I agreed.
-    At 28, I have never touched a cigarette. I must say, I feel a very slight sense
-    of regret for never having done it, because your post gave me cancer anyway.
+  - The world can be destroyed and rebuilt but only if known is the foil to make it
+    wilt.  To burn life till naught is left but earth, To shock the soil till it has
+    fused to stolid metal, And to strike the metal till it yields to the fire of its
+    wielder.

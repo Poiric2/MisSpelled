@@ -9,6 +9,8 @@ public class Station : MonoBehaviour {
     public Vector3 rotVals;
     public Quaternion anchorRot;
     public Quaternion anchorCharRot;
+    public AudioClip StationEffect;
+    public AudioSource source;
 
     protected Ingredient ingredient;
     protected Inventory inventory;
@@ -26,6 +28,7 @@ public class Station : MonoBehaviour {
     protected virtual void Start () {
         anchorRot = Quaternion.Euler(rotVals.x,0f,0f);
         anchorCharRot = Quaternion.Euler(0f, rotVals.y, 0f);
+        source = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -48,7 +51,7 @@ public class Station : MonoBehaviour {
     {
         for(int i = 0; i < Inventory.inventorySize; i++)
         {
-            if (Input.GetMouseButtonDown(0) && inventory.items[i] != null && inventory.primes[i].enabled)
+            if (Input.GetMouseButtonDown(0) && inventory.items[i] != null && inventory.items[i] is Ingredient &&  inventory.primes[i].enabled)
             {
                 ingredient = (Ingredient)inventory.items[i];
                 inventory.Highlight(i);
@@ -60,7 +63,7 @@ public class Station : MonoBehaviour {
 
     protected virtual void Job(ref Ingredient ingredient)
     {
-        print("nojob");
+        source.Play();
     }
 
     public virtual void EndMode()
