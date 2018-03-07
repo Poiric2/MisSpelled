@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Soak_Station : Station {
 
-	// Use this for initialization
-	void Start () {
-        anchor = new Vector3(-.5f, 2.4f, -3f);
-        anchorRot = new Vector3(30f, 180f, 0f);
+    // Use this for initialization
+    protected override void Start()
+    {
+        base.Start();
     }
 
     // Update is called once per frame
