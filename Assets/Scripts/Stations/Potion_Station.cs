@@ -13,9 +13,7 @@ public class Potion_Station : Station {
 	public int purple;
 
 	// Use this for initialization
-	void Start () {
-		anchor = new Vector3(3f, 2.4f, -.5f);
-        anchorRot = new Vector3(30f, 90f, 0f);
+	protected override void Start () {
 		ingredients = new List<Ingredient> ();
 		red = 0;
 		orange = 0;
