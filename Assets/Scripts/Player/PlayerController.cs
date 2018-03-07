@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour {
             if (hit.transform.tag == "interactable"){
                 SwapMovementState();
                 currStation = hit.transform.gameObject.GetComponent<Station>();
-                camLook.StartLerp(currStation.anchor, currStation.anchorRot);
+                camLook.StartLerp(currStation.anchor, currStation.anchorRot, currStation.anchorCharRot);
                 currStation.StartMode(inventory);
             }
             else if(hit.transform.tag == "pickup")
