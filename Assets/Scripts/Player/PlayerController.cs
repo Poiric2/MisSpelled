@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
             transform.Translate(strafe, 0, forward);
         }
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L) && !canInteract)
             SwapMovementState();
 
         if (Input.GetKeyDown(KeyCode.E) && canInteract)

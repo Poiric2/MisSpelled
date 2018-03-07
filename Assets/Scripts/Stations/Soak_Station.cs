@@ -16,7 +16,7 @@ public class Soak_Station : Station {
         base.Update();
     }
 
-    void Soak(ref Ingredient ingredient) {
+    protected override void Job(ref Ingredient ingredient) {
 
 		// Elemental Interactions
 		ingredient.purple += ingredient.red;

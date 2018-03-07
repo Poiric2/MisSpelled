@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
-  m_Name: Lemon Zest
+  m_Name: Nightshade
   m_EditorClassIdentifier: 
-  sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   form: leafy
   red: 0
   orange: 0
   yellow: 0
-  green: 2
-  blue: 0
+  green: 1
+  blue: 1
   purple: 0

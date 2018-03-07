@@ -14,8 +14,7 @@ public class Crush_Station : Station {
         base.Update();
 	}
 
-	void Crush(ref Ingredient ingredient) {
-        print(ingredient.red + ":" + ingredient.orange);
+    protected override void  Job(ref Ingredient ingredient) {
 		// Elemental Interactions
 		ingredient.red += ingredient.orange;
 		ingredient.orange = 0;
@@ -57,8 +56,6 @@ public class Crush_Station : Station {
     protected override void Work()
     {
         base.Work();
-        if (Input.GetKeyDown(KeyCode.C))
-            Crush(ref ingredient);
     }
 
     public override void EndMode()

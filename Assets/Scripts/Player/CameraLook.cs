@@ -72,6 +72,5 @@ public class CameraLook : MonoBehaviour {
         character.GetComponent<MeshRenderer>().enabled = true;
         canLook = true;
         mouseLook = new Vector2(character.transform.localRotation.eulerAngles.y, -transform.localRotation.eulerAngles.x);
-        print(mouseLook);
     }
 }

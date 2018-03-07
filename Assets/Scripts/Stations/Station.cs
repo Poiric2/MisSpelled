@@ -13,7 +13,7 @@ public class Station : MonoBehaviour {
     protected Ingredient ingredient;
     protected Inventory inventory;
 
-    bool working = false;
+    protected bool working = false;
 
     public string st_name;
     public string description;
@@ -26,8 +26,6 @@ public class Station : MonoBehaviour {
     protected virtual void Start () {
         anchorRot = Quaternion.Euler(rotVals.x,0f,0f);
         anchorCharRot = Quaternion.Euler(0f, rotVals.y, 0f);
-        print(anchorRot);
-        print(anchorCharRot);
     }
 	
 	// Update is called once per frame
@@ -56,6 +54,13 @@ public class Station : MonoBehaviour {
                 inventory.Highlight(i);
             }
         }
+        if (Input.GetKeyDown(KeyCode.C))
+            Job(ref ingredient);
+    }
+
+    protected virtual void Job(ref Ingredient ingredient)
+    {
+        print("nojob");
     }
 
     public virtual void EndMode()

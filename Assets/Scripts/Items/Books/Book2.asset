@@ -8,14 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
-  m_Name: Lemon Zest
+  m_Script: {fileID: 11500000, guid: 24ad826e24d00f748a6b6f5330d15c88, type: 3}
+  m_Name: Book2
   m_EditorClassIdentifier: 
-  sprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
-  form: leafy
-  red: 0
-  orange: 0
-  yellow: 0
-  green: 2
-  blue: 0
-  purple: 0
+  pgs:
+  - This
+  - Is
+  - Fun
