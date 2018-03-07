@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Potion_Station : Station {
 
-<<<<<<< HEAD
 	protected List<Ingredient> ingredients;
 	public int red;
 	public int orange;
@@ -24,12 +23,6 @@ public class Potion_Station : Station {
 		green = 0;
 		blue = 0;
 		purple = 0;
-=======
-    // Use this for initialization
-    protected override void Start()
-    {
-        base.Start();
->>>>>>> 8cfa74ef3d416b96dc251987b3963872f991b00b
     }
 
     // Update is called once per frame
@@ -49,7 +42,7 @@ public class Potion_Station : Station {
 		purple += ingredient.purple;
 	}
 
-	Item attempt_brew() {
+	void attempt_brew() {
 		// check against recipes
 
 		// reset after success
