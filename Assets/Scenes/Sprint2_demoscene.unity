@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3512,9 +3512,10 @@ GameObject:
   - component: {fileID: 1036536942}
   - component: {fileID: 1036536941}
   - component: {fileID: 1036536940}
+  - component: {fileID: 1036536944}
   m_Layer: 0
-  m_Name: Cube (8)
-  m_TagString: Untagged
+  m_Name: Dry Station
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3585,6 +3586,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1036536944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1036536939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401b1aea4a819034aa5f28633a10bac7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {x: 0, y: 2.5, z: -3.5}
+  rotVals: {x: 40, y: 180, z: 0}
+  anchorRot: {x: 0, y: 0, z: 0, w: 0}
+  anchorCharRot: {x: 0, y: 0, z: 0, w: 0}
+  st_name: Dry Station
+  description: TODO
+  StationUI: {fileID: 1527163489}
+  title: {fileID: 1263874245}
+  dsc: {fileID: 1921776571}
 --- !u!1 &1048511021
 GameObject:
   m_ObjectHideFlags: 0
@@ -4193,9 +4214,10 @@ GameObject:
   - component: {fileID: 1258389277}
   - component: {fileID: 1258389276}
   - component: {fileID: 1258389275}
+  - component: {fileID: 1258389279}
   m_Layer: 0
-  m_Name: Cube (1)
-  m_TagString: Untagged
+  m_Name: Potion Station
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4266,6 +4288,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1258389279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258389274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b59ec9ac2a26842933aad303902157, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {x: -4, y: 2.5, z: -3.5}
+  rotVals: {x: 40, y: 180, z: 0}
+  anchorRot: {x: 0, y: 0, z: 0, w: 0}
+  anchorCharRot: {x: 0, y: 0, z: 0, w: 0}
+  st_name: Potion Station
+  description: TODO
+  StationUI: {fileID: 1527163489}
+  title: {fileID: 1263874245}
+  dsc: {fileID: 1921776571}
 --- !u!1 &1259754224
 GameObject:
   m_ObjectHideFlags: 0
@@ -5142,7 +5184,7 @@ GameObject:
   - component: {fileID: 1538387201}
   - component: {fileID: 1538387200}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: Cauldron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5416,10 +5458,10 @@ MonoBehaviour:
   sensitivity: 5
   smooth: 2
   anchorLerpSpeed: 0.05
-  camRot: {x: 0, y: 0}
   camPos: {x: 0, y: 0, z: 0}
   anchor: {x: 0, y: 0, z: 0}
-  anchorRot: {x: 0, y: 0, z: 0}
+  anchorRot: {x: 0, y: 0, z: 0, w: 0}
+  anchorCharRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1623115979
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,9 +5918,10 @@ GameObject:
   - component: {fileID: 1897637785}
   - component: {fileID: 1897637784}
   - component: {fileID: 1897637783}
+  - component: {fileID: 1897637787}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: Burn Station
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5949,6 +5992,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897637787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897637782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24f5acbbd69e124587d4fc0cfcfa3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {x: -4, y: 2.5, z: -1.5}
+  rotVals: {x: 40, y: 0, z: 0}
+  anchorRot: {x: 0, y: 0, z: 0, w: 0}
+  anchorCharRot: {x: 0, y: 0, z: 0, w: 0}
+  st_name: Burn Station
+  description: TODO
+  StationUI: {fileID: 1527163489}
+  title: {fileID: 1263874245}
+  dsc: {fileID: 1921776571}
 --- !u!1 &1910394977
 GameObject:
   m_ObjectHideFlags: 0
@@ -6046,7 +6109,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1910394977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5, y: 1.5, z: -2}
+  m_LocalPosition: {x: -2.16, y: 1.5, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1595624332}
@@ -6536,9 +6599,10 @@ GameObject:
   - component: {fileID: 1984850254}
   - component: {fileID: 1984850253}
   - component: {fileID: 1984850252}
+  - component: {fileID: 1984850256}
   m_Layer: 0
-  m_Name: Cube (7)
-  m_TagString: Untagged
+  m_Name: Soak Station
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6609,6 +6673,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1984850256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1984850251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab73c3ff3e8a374d817fd6bba7ff240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {x: 0, y: 2.5, z: -1.5}
+  rotVals: {x: 40, y: 0, z: 0}
+  anchorRot: {x: 0, y: 0, z: 0, w: 0}
+  anchorCharRot: {x: 0, y: 0, z: 0, w: 0}
+  st_name: Soak Station
+  description: TODO
+  StationUI: {fileID: 1527163489}
+  title: {fileID: 1263874245}
+  dsc: {fileID: 1921776571}
 --- !u!1 &1987957899
 GameObject:
   m_ObjectHideFlags: 0
@@ -7171,9 +7255,10 @@ GameObject:
   - component: {fileID: 2145985341}
   - component: {fileID: 2145985340}
   - component: {fileID: 2145985339}
+  - component: {fileID: 2145985343}
   m_Layer: 0
-  m_Name: Cube (3)
-  m_TagString: Untagged
+  m_Name: Crushing Station
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7244,3 +7329,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2145985343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145985338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8925304c2fe8d4a837b78e5502db62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {x: 3.5, y: 2.5, z: -2}
+  rotVals: {x: 40, y: 90, z: 0}
+  anchorRot: {x: 0, y: 0, z: 0, w: 0}
+  anchorCharRot: {x: 0, y: 0, z: 0, w: 0}
+  st_name: Crushing Station
+  description: ToDo
+  StationUI: {fileID: 1527163489}
+  title: {fileID: 1263874245}
+  dsc: {fileID: 1921776571}

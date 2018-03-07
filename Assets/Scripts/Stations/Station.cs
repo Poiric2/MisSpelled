@@ -6,7 +6,9 @@ using UnityEngine;
 public class Station : MonoBehaviour {
 
     public Vector3 anchor;
-    public Vector3 anchorRot;
+    public Vector3 rotVals;
+    public Quaternion anchorRot;
+    public Quaternion anchorCharRot;
 
     protected Ingredient ingredient;
     protected Inventory inventory;
@@ -21,9 +23,12 @@ public class Station : MonoBehaviour {
     public Text dsc;
 
     // Use this for initialization
-    void Start () {
-
-	}
+    protected virtual void Start () {
+        anchorRot = Quaternion.Euler(rotVals.x,0f,0f);
+        anchorCharRot = Quaternion.Euler(0f, rotVals.y, 0f);
+        print(anchorRot);
+        print(anchorCharRot);
+    }
 	
 	// Update is called once per frame
 	protected virtual void Update () {

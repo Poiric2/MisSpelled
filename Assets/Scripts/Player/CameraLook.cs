@@ -11,10 +11,10 @@ public class CameraLook : MonoBehaviour {
     public float sensitivity = 5.0f;
     public float smooth = 2.0f;
     public float anchorLerpSpeed = .05f;
-    public Vector2 camRot;
     public Vector3 camPos;
     public Vector3 anchor;
-    public Vector3 anchorRot;
+    public Quaternion anchorRot;
+    public Quaternion anchorCharRot;
 
     GameObject character;
 
@@ -48,25 +48,21 @@ public class CameraLook : MonoBehaviour {
     }
 
     void LerpToAnchor(){
-        camRot.y = Mathf.Lerp(camRot.y, anchorRot.x, anchorLerpSpeed);
-        camRot.x = Mathf.Lerp(camRot.x, anchorRot.y, anchorLerpSpeed);
+        transform.localRotation = Quaternion.Lerp(transform.localRotation,anchorRot, anchorLerpSpeed);
+        character.transform.localRotation = Quaternion.Lerp(character.transform.localRotation,anchorCharRot,anchorLerpSpeed);
 
         camPos.x = Mathf.Lerp(camPos.x, anchor.x, anchorLerpSpeed);
         camPos.y = Mathf.Lerp(camPos.y, anchor.y, anchorLerpSpeed);
         camPos.z = Mathf.Lerp(camPos.z, anchor.z, anchorLerpSpeed);
 
-        transform.localRotation = Quaternion.Euler(camRot.y, 0f, 0f);
-        character.transform.localRotation = Quaternion.Euler(0f, camRot.x, 0f);
-
         transform.position = new Vector3(camPos.x, camPos.y, camPos.z);
     }
 
-    public void StartLerp(Vector3 pos, Vector3 rot){
+    public void StartLerp(Vector3 pos, Quaternion rot, Quaternion charRot){
         anchor = pos;
         anchorRot = rot;
+        anchorCharRot = charRot;
         camPos = transform.position;
-        camRot.y = transform.localRotation.eulerAngles.x;
-        camRot.x = character.transform.localRotation.eulerAngles.y;
         canLook = false;
         character.transform.position = new Vector3(anchor.x, 1.5f, anchor.z);
         character.GetComponent<MeshRenderer>().enabled = false;
@@ -75,5 +71,7 @@ public class CameraLook : MonoBehaviour {
     public void EndLerp(){
         character.GetComponent<MeshRenderer>().enabled = true;
         canLook = true;
+        mouseLook = new Vector2(character.transform.localRotation.eulerAngles.y, -transform.localRotation.eulerAngles.x);
+        print(mouseLook);
     }
 }
