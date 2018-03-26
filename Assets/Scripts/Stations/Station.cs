@@ -45,6 +45,7 @@ public class Station : MonoBehaviour {
         dsc.text = description;
         StationUI.SetActive(true);
         inventory.Display();
+        ingredient = null;
     }
 
     protected virtual void Work()
@@ -57,7 +58,7 @@ public class Station : MonoBehaviour {
                 inventory.Highlight(i);
             }
         }
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && ingredient != null)
             Job(ref ingredient);
     }
 

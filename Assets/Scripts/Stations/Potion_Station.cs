@@ -50,7 +50,7 @@ public class Potion_Station : Station {
         // check against recipes
         foreach (Potion p in Potions)
         {
-            if(red == p.red &&
+            if (red == p.red &&
                orange == p.orange &&
                yellow == p.yellow &&
                green == p.green &&
@@ -67,7 +67,6 @@ public class Potion_Station : Station {
                 purple = 0;
             }
         }
-        
 	}
 
     public override void StartMode(Inventory inv)

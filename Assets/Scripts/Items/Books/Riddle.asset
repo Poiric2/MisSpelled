@@ -13,7 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Poem?
   pgs:
-  - The world can be destroyed and rebuilt but only if known is the foil to make it
-    wilt.  To burn life till naught is left but earth, To shock the soil till it has
-    fused to stolid metal, And to strike the metal till it yields to the fire of its
-    wielder.
+  - 'The world can be destroyed and rebuilt but only if known is the foil to make
+    it wilt.  To burn life till naught is left but earth, To shock the soil till it
+    has fused to solid metal, To strike the metal till it yields to the fire of its
+    wielder. To drown the fire till it returns to the air, To chill the air till the
+    water inside falls to earth, And to finally dry the water till the life inside
+    is laid bare.  But stay thy hand, the initiate alchemist  For as the world can
+    yield to the will of the adept Against the fool it will retaliate.  To douse life
+    will bring about nil but strife, Frozen earth is the prison to your mirth, Those
+    who dry metal prove pathetically brittle, Heating fire brings forth hellish ire,
+    From electrified air a storm will tare, And those who strike strike the water
+    the tides shall slaughter. '

@@ -34,6 +34,20 @@ public class Inventory : MonoBehaviour
     {
     }
 
+    public void AddNewItem(Item x)
+    {
+        for (int i = 0; i < inventorySize; i++)
+        {
+            if (items[i] == null)
+            {
+                items[i] = Object.Instantiate(x);
+                images[i].sprite = items[i].sprite;
+                images[i].enabled = true;
+                return;
+            }
+        }
+    }
+
     public void Add(Item x){
         for (int i = 0; i < inventorySize; i++){
             if(items[i] == null){
