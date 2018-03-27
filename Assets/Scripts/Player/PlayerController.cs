@@ -115,8 +115,7 @@ public class PlayerController : MonoBehaviour {
     void PaintOutline()
     {
         currOutlines.AddRange(hit.transform.gameObject.GetComponentsInChildren<Outline>());
-
-        print(currOutlines.Count);
+        
         foreach (Outline o in currOutlines)
         {
             o.enabled = true;
