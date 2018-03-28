@@ -56,6 +56,8 @@ public class Station : MonoBehaviour {
         source.Play();
         if(animator != null)
             animator.SetTrigger("Job");
+        ingredient.count = ingredient.count + 1;
+        inventory.UpdateCounts();
     }
 
     public virtual void EndMode()
