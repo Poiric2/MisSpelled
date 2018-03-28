@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Leviathan Milk
   m_EditorClassIdentifier: 
+  name: Leviathan Milk
   sprite: {fileID: 0}
   form: watery
   red: 0

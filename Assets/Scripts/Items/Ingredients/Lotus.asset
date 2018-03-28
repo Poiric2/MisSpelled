@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Lotus
   m_EditorClassIdentifier: 
+  name: Lotus
   sprite: {fileID: 0}
   form: leafy
   red: 0

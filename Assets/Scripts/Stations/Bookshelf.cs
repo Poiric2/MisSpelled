@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Bookshelf : Station {
 
     public GameObject BookView;
-    public Text pg1;
-    public Text pg2;
+    public Image pg1;
+    public Image pg2;
     public Text Title1;
     public Text Title2;
 
@@ -50,11 +50,11 @@ public class Bookshelf : Station {
 
     void NextPage()
     {
-        if(currPage < Books[currBook].pgs.Count - 1)
+        if(currPage < Books[currBook].page_images.Count - 1)
         {
             currPage++;
-            pg1.text = pg2.text;
-            pg2.text = (string)Books[currBook].pgs[currPage];  
+            pg1.sprite = pg2.sprite;
+            pg2.sprite = Books[currBook].page_images[currPage];  
         }
     }
 
@@ -63,8 +63,8 @@ public class Bookshelf : Station {
         if (currPage > 1)
         {
             currPage--;
-            pg2.text = pg1.text;
-            pg1.text = (string)Books[currBook].pgs[currPage-1];
+            pg2.sprite = pg1.sprite;
+            pg1.sprite = Books[currBook].page_images[currPage-1];
         }
     }
 
@@ -74,11 +74,11 @@ public class Bookshelf : Station {
         {
             currBook++;
             currPage = 1;
-            pg1.text = (string)Books[currBook].pgs[0];
-            if (Books[currBook].pgs.Count > 1)
-                pg2.text = (string)Books[currBook].pgs[1];
+            pg1.sprite = Books[currBook].page_images[0];
+            if (Books[currBook].page_images.Count > 1)
+                pg2.sprite = Books[currBook].page_images[1];
             else
-                pg2.text = "";
+                pg2.sprite = null;
             Title1.text = (string)Books[currBook].title;
             Title2.text = (string)Books[currBook].title;
         }
@@ -90,11 +90,11 @@ public class Bookshelf : Station {
         {
             currBook--;
             currPage = 1;
-            pg1.text = (string)Books[currBook].pgs[0];
-            if (Books[currBook].pgs.Count > 1)
-                pg2.text = (string)Books[currBook].pgs[1];
+            pg1.sprite = Books[currBook].page_images[0];
+            if (Books[currBook].page_images.Count > 1)
+                pg2.sprite = Books[currBook].page_images[1];
             else
-                pg2.text = "";
+                pg2.sprite = null;
             Title1.text = (string)Books[currBook].title;
             Title2.text = (string)Books[currBook].title;
         }
@@ -106,9 +106,9 @@ public class Bookshelf : Station {
         working = true;
         currBook = 0;
         currPage = 1;
-        pg1.text = (string)Books[0].pgs[0];
-        if (Books[0].pgs.Count > 1)
-            pg2.text = (string)Books[0].pgs[1];
+        pg1.sprite = Books[0].page_images[0];
+        if (Books[0].page_images.Count > 1)
+            pg2.sprite = Books[0].page_images[1];
         Title1.text = (string)Books[0].title;
         Title2.text = (string)Books[0].title;
         BookView.SetActive(true);
