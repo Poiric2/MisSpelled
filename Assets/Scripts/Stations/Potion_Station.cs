@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Potion_Station : Station {
 
@@ -13,6 +14,8 @@ public class Potion_Station : Station {
     public int purple = 0;
 
     public List<Potion> Potions;
+    public Image[] HoldingImages;
+    public GameObject PotionUI;
 
     // Use this for initialization
     protected override void Start () {
@@ -28,7 +31,7 @@ public class Potion_Station : Station {
             attempt_brew();
     }
 
-    protected override void Job(ref Ingredient ingredient) {
+    public override void Job(ref Ingredient ingredient) {
         foreach(Ingredient e in ingredients)
         {
             if(e == ingredient)
@@ -37,6 +40,15 @@ public class Potion_Station : Station {
             }
         }
 		ingredients.Add (ingredient);
+        for(int i = 0; i < 4; i++)
+        {
+            if(HoldingImages[i].sprite == null)
+            {
+                HoldingImages[i].sprite = ingredient.sprite;
+                HoldingImages[i].enabled = true;
+                break;
+            }
+        }
         inventory.Remove(ingredient);
 		red += ingredient.red;
 		orange += ingredient.orange;
@@ -72,6 +84,7 @@ public class Potion_Station : Station {
     public override void StartMode(Inventory inv)
     {
         base.StartMode(inv);
+        PotionUI.SetActive(true);
     }
 
     public override void EndMode()
@@ -80,5 +93,11 @@ public class Potion_Station : Station {
         foreach (Ingredient e in ingredients)
             inventory.Add(e);
         ingredients = new List<Ingredient>();
+        foreach (Image image in HoldingImages)
+        {
+            image.sprite = null;
+            image.enabled = false;
+        }
+        PotionUI.SetActive(false);
     }
 }

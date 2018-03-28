@@ -11,6 +11,7 @@ public class Station : MonoBehaviour {
     public Quaternion anchorCharRot;
     public AudioClip StationEffect;
     public AudioSource source;
+    public Animator animator;
 
     protected Ingredient ingredient;
     protected Inventory inventory;
@@ -33,8 +34,6 @@ public class Station : MonoBehaviour {
 	
 	// Update is called once per frame
 	protected virtual void Update () {
-        if (working)
-            Work();
 	}
 
     public virtual void StartMode(Inventory inv){
@@ -49,22 +48,14 @@ public class Station : MonoBehaviour {
     }
 
     protected virtual void Work()
-    {
-        for(int i = 0; i < Inventory.inventorySize; i++)
-        {
-            if (Input.GetMouseButtonDown(0) && inventory.items[i] != null && inventory.items[i] is Ingredient &&  inventory.primes[i].enabled)
-            {
-                ingredient = (Ingredient)inventory.items[i];
-                inventory.Highlight(i);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.C) && ingredient != null)
-            Job(ref ingredient);
+    { 
     }
 
-    protected virtual void Job(ref Ingredient ingredient)
+    public virtual void Job(ref Ingredient ingredient)
     {
         source.Play();
+        if(animator != null)
+            animator.SetTrigger("Job");
     }
 
     public virtual void EndMode()

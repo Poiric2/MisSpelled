@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Ginseng
   m_EditorClassIdentifier: 
   name: Ginseng
-  sprite: {fileID: 21300000, guid: efd82b73a936cc14fba57fa4c0bda009, type: 3}
+  sprite: {fileID: 21300000, guid: f3d92ea37eecae645b73982cc35cc682, type: 3}
   form: shaved
   red: 1
   orange: 1
