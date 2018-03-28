@@ -71,6 +71,7 @@ public class CameraLook : MonoBehaviour {
     public void EndLerp(){
         character.GetComponent<MeshRenderer>().enabled = true;
         canLook = true;
+        transform.position = new Vector3(anchor.x, anchor.y, anchor.z);
         mouseLook = new Vector2(character.transform.localRotation.eulerAngles.y, -transform.localRotation.eulerAngles.x);
     }
 }

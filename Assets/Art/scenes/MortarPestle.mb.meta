@@ -4,7 +4,30 @@ timeCreated: 1519230848
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube1
+    100004: pCylinder1
+    100006: pCylinder2
+    100008: pSphere1
+    100010: transform1
+    100012: transform2
+    400000: //RootNode
+    400002: pCube1
+    400004: pCylinder1
+    400006: pCylinder2
+    400008: pSphere1
+    400010: transform1
+    400012: transform2
+    2100000: lambert2
+    2300000: pCube1
+    2300002: pCylinder2
+    3300000: pCube1
+    3300002: pCylinder2
+    4300000: pCylinder2
+    4300002: pCube1
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1

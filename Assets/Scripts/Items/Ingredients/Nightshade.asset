@@ -11,7 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Nightshade
   m_EditorClassIdentifier: 
-  sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  name: Nightshade
+  sprite: {fileID: 21300000, guid: 94309ed724210cd4da2dc37578ff2b09, type: 3}
   form: leafy
   red: 0
   orange: 0

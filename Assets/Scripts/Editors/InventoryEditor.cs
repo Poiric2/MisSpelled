@@ -10,6 +10,7 @@ public class InventoryEditor : Editor {
     private SerializedProperty items;
     private SerializedProperty highlights;
     private SerializedProperty primes;
+    private SerializedProperty texts;
 
     private bool[] Show;
 
@@ -17,6 +18,7 @@ public class InventoryEditor : Editor {
     private const string im = "images";
     private const string h = "highlights";
     private const string p = "primes";
+    private const string t = "texts";
 
     private void OnEnable()
     {
@@ -24,6 +26,7 @@ public class InventoryEditor : Editor {
         items = serializedObject.FindProperty(i);
         highlights = serializedObject.FindProperty(h);
         primes = serializedObject.FindProperty(p);
+        texts = serializedObject.FindProperty(t);
         Show = new bool[Inventory.inventorySize];
     }
 
@@ -52,7 +55,7 @@ public class InventoryEditor : Editor {
             EditorGUILayout.PropertyField(primes.GetArrayElementAtIndex(index));
             EditorGUILayout.PropertyField(highlights.GetArrayElementAtIndex(index));
             EditorGUILayout.PropertyField(items.GetArrayElementAtIndex(index));
-            
+            EditorGUILayout.PropertyField(texts.GetArrayElementAtIndex(index));
         }
 
         EditorGUI.indentLevel--;

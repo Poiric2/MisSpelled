@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     public Image[] highlights = new Image[inventorySize];
     public Image[] primes = new Image[inventorySize];
     public Item[] items = new Item[inventorySize];
+    public Text[] texts = new Text[inventorySize];
 
     int currHighlight = 0;
     public bool open = false;
@@ -19,6 +20,15 @@ public class Inventory : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        for(int i = 0; i < 16; i++)
+        {
+            if (items[i] != null)
+            {
+                images[i].sprite = items[i].sprite;
+                texts[i].text = items[i].name;
+                images[i].enabled = true;
+            }  
+        }
     }
 
     // Update is called once per frame
@@ -26,11 +36,27 @@ public class Inventory : MonoBehaviour
     {
     }
 
+    public void AddNewItem(Item x)
+    {
+        for (int i = 0; i < inventorySize; i++)
+        {
+            if (items[i] == null)
+            {
+                items[i] = Object.Instantiate(x);
+                images[i].sprite = items[i].sprite;
+                texts[i].text = items[i].name;
+                images[i].enabled = true;
+                return;
+            }
+        }
+    }
+
     public void Add(Item x){
         for (int i = 0; i < inventorySize; i++){
             if(items[i] == null){
                 items[i] = x;
                 images[i].sprite = x.sprite;
+                texts[i].text = x.name;
                 images[i].enabled = true;
                 return;
             }
@@ -46,6 +72,7 @@ public class Inventory : MonoBehaviour
                 items[i] = null;
                 images[i].sprite = null;
                 images[i].enabled = false;
+                texts[i].text = null;
                 highlights[i].enabled = false;
                 UpdateInventory();
                 return;
@@ -60,10 +87,10 @@ public class Inventory : MonoBehaviour
             if(items[i] == null && items[i+1] != null)
             {
                 items[i] = items[i + 1];
-                images[i] = images[i + 1];
+                images[i].sprite = items[i].sprite;
                 images[i].enabled = true;
+                texts[i].text = items[i].name;
                 items[i + 1] = null;
-                images[i + 1] = null;
                 images[i + 1].enabled = false;
             }
         }
