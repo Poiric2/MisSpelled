@@ -14,6 +14,12 @@ public class Inventory : MonoBehaviour
     public Item[] items = new Item[inventorySize];
     public Text[] texts = new Text[inventorySize];
 
+    public GameObject dragUI;
+    public Image dragImage;
+    public Image dragPrime;
+    public bool dragPrimed;
+    public Item selected;
+
     int currHighlight = 0;
     public bool open = false;
     
@@ -119,6 +125,12 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void PrimeDrag()
+    {
+        dragPrime.enabled = true;
+        dragPrimed = true;
+    }
+
     public void UnPrime(int i)
     {
         if (primes[i] != null)
@@ -126,6 +138,27 @@ public class Inventory : MonoBehaviour
             primes[i].enabled = false;
         }
     }
+
+    public void UnPrimeDrag()
+    {
+        dragPrime.enabled = false;
+        dragPrimed = false;
+    }
+
+    public void Drag(int i)
+    {
+        dragImage.sprite = images[i].sprite;
+        selected = items[i];
+        dragUI.SetActive(true);
+    }
+
+    public void UnDrag()
+    {
+        dragUI.SetActive(false);
+        dragImage.sprite = null;
+        selected = null;
+    }
+
     public void Display()
     {
         InvDisp.SetActive(true);

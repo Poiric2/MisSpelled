@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor (typeof(Inventory))]
+/*[CustomEditor (typeof(Inventory))]
 public class InventoryEditor : Editor {
 
     private SerializedProperty images;
@@ -62,3 +62,4 @@ public class InventoryEditor : Editor {
         EditorGUILayout.EndVertical();
     }
 }
+*/

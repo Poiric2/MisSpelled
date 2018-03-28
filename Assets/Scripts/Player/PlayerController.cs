@@ -16,9 +16,9 @@ public class PlayerController : MonoBehaviour {
     private Inventory inventory;
     private Station currStation;
 
-    public Shader shader1;
-    public Shader shader2;
-    private Renderer rend;
+    public GameObject dragUI;
+    public GameObject StationHitbox;
+    private bool dragging = false;
 
     private Ray outlineRay;
     private List<Outline> currOutlines;
@@ -29,8 +29,6 @@ public class PlayerController : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         camLook = GetComponentInChildren<CameraLook>();
         inventory = GetComponent<Inventory>();
-        shader1 = Shader.Find("Standard");
-        shader2 = Shader.Find("Outlined/Regular");
         currOutlines = new List<Outline>();
     }
 	
@@ -73,12 +71,44 @@ public class PlayerController : MonoBehaviour {
                    Input.mousePosition.y < inventory.images[i].transform.position.y + 32)
                 {
                     inventory.Prime(i);
+                    if (Input.GetMouseButtonDown(0) && inventory.items[i] != null)
+                    {
+                        inventory.Drag(i);
+                        dragging = true;
+                    }
                 }
                 else
                 {
                     inventory.UnPrime(i);
                 }
             }
+
+        if (Input.GetMouseButtonUp(0) && dragging)
+        {
+            if (inventory.dragPrimed)
+            {
+                Ingredient tmp = (Ingredient)inventory.selected;
+                currStation.Job(ref tmp);
+            }
+            inventory.UnDrag();
+            dragging = false;
+        }
+
+        if (dragging)
+        {
+            dragUI.transform.position = Input.mousePosition;
+            if(dragUI.transform.position.x > StationHitbox.transform.position.x &&
+               dragUI.transform.position.x < StationHitbox.transform.position.x + 300 &&
+               dragUI.transform.position.y > StationHitbox.transform.position.y &&
+               dragUI.transform.position.y < StationHitbox.transform.position.y + 200)
+            {
+                inventory.PrimeDrag();
+            }
+            else
+            {
+                inventory.UnPrimeDrag();
+            }
+        }
     }
 
     void SwapMovementState(){
