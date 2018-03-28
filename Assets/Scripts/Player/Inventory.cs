@@ -183,11 +183,12 @@ public class Inventory : MonoBehaviour
 
     public void UpdateCounts()
     {
-        for(int i = 0; i < 16; i++)
+        for(int j = 0; j < 16; j++)
         {
-            while(counts[i] != null)
-                counts[i].text = items[i].count.ToString();
-            break;
+            if (items[j] != null)
+                counts[j].text = items[j].count.ToString();
+            else
+                break;
         }
     }
 }
