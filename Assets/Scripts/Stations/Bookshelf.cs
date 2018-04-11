@@ -14,7 +14,7 @@ public class Bookshelf : Station {
     int currPage;
     int currBook;
 
-    public Book[] Books = new Book[5];
+    public Book[] Books = new Book[6];
 
 	// Use this for initialization
 	protected override void Start () {
@@ -52,6 +52,7 @@ public class Bookshelf : Station {
     {
         if(currPage < Books[currBook].page_images.Count - 1)
         {
+            print("1");
             currPage++;
             pg1.sprite = pg2.sprite;
             pg2.sprite = Books[currBook].page_images[currPage];  
@@ -62,6 +63,7 @@ public class Bookshelf : Station {
     {
         if (currPage > 1)
         {
+            print("2");
             currPage--;
             pg2.sprite = pg1.sprite;
             pg1.sprite = Books[currBook].page_images[currPage-1];
@@ -72,6 +74,7 @@ public class Bookshelf : Station {
     {
         if (currBook < Books.Length - 1)
         {
+            print("3");
             currBook++;
             currPage = 1;
             pg1.sprite = Books[currBook].page_images[0];
@@ -79,8 +82,6 @@ public class Bookshelf : Station {
                 pg2.sprite = Books[currBook].page_images[1];
             else
                 pg2.sprite = null;
-            Title1.text = (string)Books[currBook].title;
-            Title2.text = (string)Books[currBook].title;
         }
     }
 
@@ -88,6 +89,7 @@ public class Bookshelf : Station {
     {
         if(currBook > 0)
         {
+            print("4");
             currBook--;
             currPage = 1;
             pg1.sprite = Books[currBook].page_images[0];
@@ -95,8 +97,6 @@ public class Bookshelf : Station {
                 pg2.sprite = Books[currBook].page_images[1];
             else
                 pg2.sprite = null;
-            Title1.text = (string)Books[currBook].title;
-            Title2.text = (string)Books[currBook].title;
         }
     }
 
@@ -109,8 +109,6 @@ public class Bookshelf : Station {
         pg1.sprite = Books[0].page_images[0];
         if (Books[0].page_images.Count > 1)
             pg2.sprite = Books[0].page_images[1];
-        Title1.text = (string)Books[0].title;
-        Title2.text = (string)Books[0].title;
         BookView.SetActive(true);
     }
 

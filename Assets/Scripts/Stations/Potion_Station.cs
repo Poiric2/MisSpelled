@@ -27,8 +27,6 @@ public class Potion_Station : Station {
     protected override void Update()
     {
         base.Update();
-        if(Input.GetKeyDown(KeyCode.V))
-            attempt_brew();
     }
 
     public override void Job(ref Ingredient ingredient) {
@@ -57,6 +55,12 @@ public class Potion_Station : Station {
 		blue += ingredient.blue;
 		purple += ingredient.purple;
 	}
+
+    protected override void Work()
+    {
+        if (Input.GetKeyDown(KeyCode.V))
+            attempt_brew();
+    }
 
 	void attempt_brew() {
         // check against recipes

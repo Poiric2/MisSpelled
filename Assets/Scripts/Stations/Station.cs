@@ -34,6 +34,10 @@ public class Station : MonoBehaviour {
 	
 	// Update is called once per frame
 	protected virtual void Update () {
+        if (working)
+        {
+            Work();
+        }
 	}
 
     public virtual void StartMode(Inventory inv){
