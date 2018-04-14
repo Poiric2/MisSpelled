@@ -26,20 +26,30 @@ public class Soak_Station : Station {
 		}
 
 		// Physical Interactions
+		if (ingredient.form == "powdery") {
+			ingredient.form = "pasty";
+		}
+
 		if (ingredient.form == "pasty") {
 			ingredient.form = "watery";
 		}
 
-		if (ingredient.form == "powdery") {
-			ingredient.form = "watery";
+		if (ingredient.form == "crumbling") {
+			ingredient.form = "plastic";
 		}
 
-		if (ingredient.form == "brittle") {
-			ingredient.form = "squishy";
+		if (ingredient.form == "plastic") {
+			ingredient.form = "leafy";
 		}
 
-		if (ingredient.form == "burnt") {
-			ingredient.form = "murky";
-		}
-	}
+        if (ingredient.form == "solid")
+        {
+            ingredient.form = "slippery";
+        }
+
+        if (ingredient.form == "slippery")
+        {
+            ingredient.form = "squishy";
+        }
+    }
 }
