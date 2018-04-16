@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: deb33421da2242e42a171a4f37ea675a, type: 3}
-  m_Name: Dungeon's Brew
+  m_Name: Potion7
   m_EditorClassIdentifier: 
-  name: Dungeon's Brew
+  name: 
   sprite: {fileID: 0}
-  form: 
-  destruction: 
-  red: 1
-  orange: 0
-  yellow: 0
-  green: 2
+  form: squishy
+  destruction: desolated
+  red: 2
+  orange: 1
+  yellow: 2
+  green: 1
   blue: 1
   purple: 0

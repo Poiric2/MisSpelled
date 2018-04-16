@@ -5,7 +5,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Potion : Item
 {
-    //List<Item> ingredients;
+    public string form;
+    public string destruction;
     public int red;
     public int orange;
     public int yellow;
