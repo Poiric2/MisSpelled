@@ -13,6 +13,8 @@ public class Station : MonoBehaviour {
     public AudioSource source;
     public Animator animator;
 
+    public int workTime = 10;
+
     protected Ingredient ingredient;
     protected Inventory inventory;
 
@@ -52,7 +54,7 @@ public class Station : MonoBehaviour {
     }
 
     protected virtual void Work()
-    { 
+    {
     }
 
     public virtual void Job(ref Ingredient ingredient)
