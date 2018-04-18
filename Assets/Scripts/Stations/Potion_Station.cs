@@ -6,21 +6,26 @@ using UnityEngine.UI;
 public class Potion_Station : Station {
 
 	protected List<Ingredient> ingredients;
-	public int red = 0;
-    public int orange = 0;
-    public int yellow = 0;
-    public int green = 0;
-    public int blue = 0;
-    public int purple = 0;
+	public int red;
+	public int orange;
+	public int yellow;
+	public int green;
+	public int blue;
+	public int purple;
 
-    public List<Potion> Potions;
-    public Image[] HoldingImages;
-    public GameObject PotionUI;
+	public List<Recipe> recipes;
+	protected bool success;
 
-    // Use this for initialization
-    protected override void Start () {
-        base.Start();
+	// Use this for initialization
+	protected override void Start () {
 		ingredients = new List<Ingredient> ();
+		red = 0;
+		orange = 0;
+		yellow = 0;
+		green = 0;
+		blue = 0;
+		purple = 0;
+		success = false;
     }
 
     // Update is called once per frame
@@ -58,27 +63,60 @@ public class Potion_Station : Station {
 		purple += ingredient.purple;
 	}
 
+	Recipe brew_potion(Recipe recipe) {
+		return recipe;
+	}
+
 	void attempt_brew() {
-        // check against recipes
-        foreach (Potion p in Potions)
-        {
-            if (red == p.red &&
-               orange == p.orange &&
-               yellow == p.yellow &&
-               green == p.green &&
-               blue == p.blue &&
-               purple == p.purple)
-            {
-                ingredients = new List<Ingredient>();
-                inventory.Add(p);
-                red = 0;
-                orange = 0;
-                yellow = 0;
-                green = 0;
-                blue = 0;
-                purple = 0;
-            }
-        }
+		// check against recipes
+		foreach (Recipe recipe in recipes) {
+			success = true;
+
+			if (recipe.red != red) {
+				success = false;
+			}
+			if (recipe.orange != orange) {
+				success = false;
+			}
+			if (recipe.orange != orange) {
+				success = false;
+			}
+			if (recipe.yellow != yellow) {
+				success = false;
+			}
+			if (recipe.green != green) {
+				success = false;
+			}
+			if (recipe.blue != blue) {
+				success = false;
+			}
+			if (recipe.purple != purple) {
+				success = false;
+			}
+
+			if (success == true) {
+				brew_potion (recipe);
+
+				red = 0;
+				orange = 0;
+				yellow = 0;
+				green = 0;
+				blue = 0;
+				purple = 0;
+			}
+		}
+
+		if (success == false) {
+			if (recipes.Count > 5) {
+				print("potion failed");
+				red = 0;
+				orange = 0;
+				yellow = 0;
+				green = 0;
+				blue = 0;
+				purple = 0;
+			}
+		}
 	}
 
     public override void StartMode(Inventory inv)
