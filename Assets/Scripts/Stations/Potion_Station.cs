@@ -12,6 +12,9 @@ public class Potion_Station : Station {
 	public int blue;
 	public int purple;
 
+	public List<Recipe> recipes;
+	protected bool success;
+
 	// Use this for initialization
 	protected override void Start () {
 		ingredients = new List<Ingredient> ();
@@ -21,6 +24,7 @@ public class Potion_Station : Station {
 		green = 0;
 		blue = 0;
 		purple = 0;
+		success = false;
     }
 
     // Update is called once per frame
@@ -40,15 +44,59 @@ public class Potion_Station : Station {
 		purple += ingredient.purple;
 	}
 
+	Recipe brew_potion(Recipe recipe) {
+		return recipe;
+	}
+
 	void attempt_brew() {
 		// check against recipes
+		foreach (Recipe recipe in recipes) {
+			success = true;
 
-		// reset after success
-		red = 0;
-		orange = 0;
-		yellow = 0;
-		green = 0;
-		blue = 0;
-		purple = 0;
+			if (recipe.red != red) {
+				success = false;
+			}
+			if (recipe.orange != orange) {
+				success = false;
+			}
+			if (recipe.orange != orange) {
+				success = false;
+			}
+			if (recipe.yellow != yellow) {
+				success = false;
+			}
+			if (recipe.green != green) {
+				success = false;
+			}
+			if (recipe.blue != blue) {
+				success = false;
+			}
+			if (recipe.purple != purple) {
+				success = false;
+			}
+
+			if (success == true) {
+				brew_potion (recipe);
+
+				red = 0;
+				orange = 0;
+				yellow = 0;
+				green = 0;
+				blue = 0;
+				purple = 0;
+			}
+		}
+
+		if (success == false) {
+			if (recipes.Count > 5) {
+				print("potion failed");
+				red = 0;
+				orange = 0;
+				yellow = 0;
+				green = 0;
+				blue = 0;
+				purple = 0;
+			}
+		}
 	}
 }
