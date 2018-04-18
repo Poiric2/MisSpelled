@@ -1168,7 +1168,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Lab
+          m_StringArgument: Lab_Alt
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1217,7 +1217,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f7e77aebe1b5e44d8f9fabd1c12d352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Lab
 --- !u!1 &1250442825
 GameObject:
   m_ObjectHideFlags: 0
