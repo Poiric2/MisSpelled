@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -708,7 +708,7 @@ RectTransform:
   - {fileID: 537167908}
   - {fileID: 1481941318}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6592,40 +6592,13 @@ Prefab:
       propertyPath: m_TagString
       value: interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Freeze
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 157148c0260cac3439fab13451d30fa7, type: 3}
   m_IsPrefabParent: 0
---- !u!84 &526376090
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1223
-  m_Height: 641
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &533156395
 GameObject:
   m_ObjectHideFlags: 0
@@ -11193,6 +11166,10 @@ Prefab:
       propertyPath: m_TagString
       value: interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Mortar_Pestal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 576431bd7a079864383ecad962ee05ee, type: 3}
   m_IsPrefabParent: 0
@@ -11781,7 +11758,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 1153683277}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &987439916
 MonoBehaviour:
@@ -11853,7 +11830,7 @@ SpriteRenderer:
   m_Size: {x: 12.8, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1 &991389346
 GameObject:
@@ -12790,7 +12767,7 @@ Transform:
   - {fileID: 453499527}
   - {fileID: 926600293}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!114 &1046133804
 MonoBehaviour:
@@ -13630,7 +13607,7 @@ SpriteRenderer:
   m_Size: {x: 12.8, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1100411508
 Transform:
@@ -13643,7 +13620,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 1015680853}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 40, z: 0}
 --- !u!1 &1104841251
 GameObject:
@@ -14872,7 +14849,7 @@ Transform:
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 1394409728}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1183283759
 MonoBehaviour:
@@ -14944,7 +14921,7 @@ SpriteRenderer:
   m_Size: {x: 12.8, y: 7.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1001 &1195577375
 Prefab:
@@ -15760,6 +15737,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Bookshelf
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad31a54b7bbcf8d4da3dd96077e65921, type: 3}
   m_IsPrefabParent: 0
@@ -16377,6 +16358,10 @@ Prefab:
       propertyPath: m_TagString
       value: interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Potion
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 157148c0260cac3439fab13451d30fa7, type: 3}
   m_IsPrefabParent: 0
@@ -16696,7 +16681,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1348487297
 GameObject:
@@ -18100,7 +18085,7 @@ Transform:
   m_LocalScale: {x: 0.2594301, y: 0.20466, z: 0.6111002}
   m_Children: []
   m_Father: {fileID: 1941033303}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1461991123
 MeshRenderer:
@@ -22391,7 +22376,7 @@ Transform:
   m_Children:
   - {fileID: 1816334237}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 60.257004, z: 0}
 --- !u!1 &1752890582
 GameObject:
@@ -23074,7 +23059,7 @@ MonoBehaviour:
   outlineCamera: {fileID: 920386615}
   outlineShaderMaterial: {fileID: 0}
   renderTexture: {fileID: 128560792}
-  extraRenderTexture: {fileID: 526376090}
+  extraRenderTexture: {fileID: 0}
 --- !u!114 &1816334239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23926,6 +23911,10 @@ Prefab:
       propertyPath: m_TagString
       value: interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Zap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10904171663c6d341bd3d7f771525260, type: 3}
   m_IsPrefabParent: 0
@@ -24354,7 +24343,7 @@ Transform:
   m_LocalScale: {x: 0.2594301, y: 0.20466, z: 0.6111002}
   m_Children: []
   m_Father: {fileID: 1716574055}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1897595725
 MeshRenderer:
@@ -24698,6 +24687,10 @@ Prefab:
     - target: {fileID: 100000, guid: 157148c0260cac3439fab13451d30fa7, type: 3}
       propertyPath: m_TagString
       value: interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Burn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 157148c0260cac3439fab13451d30fa7, type: 3}
@@ -26653,6 +26646,10 @@ Prefab:
     - target: {fileID: 100000, guid: 576431bd7a079864383ecad962ee05ee, type: 3}
       propertyPath: m_TagString
       value: interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: Dry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 576431bd7a079864383ecad962ee05ee, type: 3}
