@@ -17,9 +17,9 @@ public class Station : MonoBehaviour {
     public GameObject inventoryhitbox;
     public bool working = false;
     public bool full = true;
-    private bool dragPrimed;
-    private bool dragging = true;
-    private bool operated = false;
+    protected bool dragPrimed;
+    protected bool dragging = true;
+    protected bool operated = false;
 
     public int workTime = 10;
 
@@ -201,6 +201,7 @@ public class Station : MonoBehaviour {
             else
             {
                 station_items[i].sprite = null;
+                station_items[i].enabled = false;
                 item_names[i].text = "";
                 counts[i].text = "";
             }

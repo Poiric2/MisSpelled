@@ -84,7 +84,6 @@ public class Inventory : MonoBehaviour
                 images[i].enabled = false;
                 counts[i].text = "";
                 texts[i].text = null;
-                highlights[i].enabled = false;
                 UpdateInventory();
                 return;
             }
@@ -122,7 +121,6 @@ public class Inventory : MonoBehaviour
 
     public void Clear()
     {
-        highlights[currHighlight].enabled = false;
     }
 
     public void Prime(int i)
