@@ -15,6 +15,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: d00e8dd1a0ee8704ea844bc3813a8b9a, type: 3}
   count: 0
   form: solid
+  destruction: pure
   red: 1
   orange: 0
   yellow: 0
