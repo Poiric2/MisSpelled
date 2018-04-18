@@ -32,8 +32,6 @@ public class Potion_Station : Station {
     protected override void Update()
     {
         base.Update();
-        if(Input.GetKeyDown(KeyCode.V))
-            attempt_brew();
     }
 
     public override void Job(ref Ingredient ingredient) {
@@ -54,7 +52,7 @@ public class Potion_Station : Station {
                 break;
             }
         }
-        inventory.Remove(ingredient);
+        //inventory.Remove(ingredient);
 		red += ingredient.red;
 		orange += ingredient.orange;
 		yellow += ingredient.yellow;
