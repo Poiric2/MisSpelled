@@ -14,11 +14,13 @@ public class Potion_Station : Station {
 	public int purple;
 
 	public List<Recipe> recipes;
+	protected List<Image> HoldingImages;
 	protected bool success;
 
 	// Use this for initialization
 	protected override void Start () {
 		ingredients = new List<Ingredient> ();
+		HoldingImages = new List<Image> ();
 		red = 0;
 		orange = 0;
 		yellow = 0;
@@ -52,7 +54,7 @@ public class Potion_Station : Station {
                 break;
             }
         }
-        inventory.Remove(ingredient);
+        //inventory.Remove(ingredient);
 		red += ingredient.red;
 		orange += ingredient.orange;
 		yellow += ingredient.yellow;
@@ -120,7 +122,7 @@ public class Potion_Station : Station {
     public override void StartMode(Inventory inv)
     {
         base.StartMode(inv);
-        PotionUI.SetActive(true);
+        // PotionUI.SetActive(true);
     }
 
     public override void EndMode()
@@ -134,6 +136,6 @@ public class Potion_Station : Station {
             image.sprite = null;
             image.enabled = false;
         }
-        PotionUI.SetActive(false);
+        // PotionUI.SetActive(false);
     }
 }

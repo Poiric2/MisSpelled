@@ -137,7 +137,8 @@ public class PlayerController : MonoBehaviour {
             }
             else if(hit.transform.tag == "pickup")
             {
-                inventory.AddNewItem(hit.transform.GetComponent<Pickup>().item);
+				// COLE PLEASE FIX, THANK!
+                // inventory.AddNewItem(hit.transform.GetComponent<Pickup>().item);
                 ClearOutline();
                 Destroy(hit.transform.gameObject);
             }
