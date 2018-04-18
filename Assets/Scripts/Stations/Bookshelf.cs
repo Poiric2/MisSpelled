@@ -24,12 +24,13 @@ public class Bookshelf : Station {
     // Update is called once per frame
     protected override void Update()
     {
-        base.Update();
+        if(working)
+            Read();
     }
 
-    protected override void Work()
+    public void Read()
     {
-        BookView.SetActive(true);
+        
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             NextPage();
@@ -114,8 +115,8 @@ public class Bookshelf : Station {
 
     public override void EndMode()
     {
-        Cursor.lockState = CursorLockMode.Locked;
         working = false;
+        Cursor.lockState = CursorLockMode.Locked;
         BookView.SetActive(false);
     }
 }

@@ -47,7 +47,7 @@ public class Potion_Station : Station {
                 break;
             }
         }
-        inventory.Remove(ingredient);
+        //inventory.Remove(ingredient);
 		red += ingredient.red;
 		orange += ingredient.orange;
 		yellow += ingredient.yellow;
@@ -56,7 +56,7 @@ public class Potion_Station : Station {
 		purple += ingredient.purple;
 	}
 
-    protected override void Work()
+    public override void Work(ref Ingredient ingredient)
     {
         if (Input.GetKeyDown(KeyCode.V))
             attempt_brew();

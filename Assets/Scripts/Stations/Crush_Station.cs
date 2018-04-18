@@ -54,9 +54,9 @@ public class Crush_Station : Station {
         base.StartMode(inv);
     }
 
-    protected override void Work()
+    public override void Work(ref Ingredient ingredient)
     {
-        base.Work();
+        base.Work(ref ingredient);
     }
 
     public override void EndMode()

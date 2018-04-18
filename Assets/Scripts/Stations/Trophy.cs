@@ -25,7 +25,7 @@ public class Trophy : Station {
         }
 	}
 
-    protected override void Work()
+    public override void Work(ref Ingredient ingredient)
     {
         foreach(Item i in inventory.items)
         {

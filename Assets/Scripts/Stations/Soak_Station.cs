@@ -42,4 +42,9 @@ public class Soak_Station : Station {
 			ingredient.form = "murky";
 		}
 	}
+
+    public override void Work(ref Ingredient ingredient)
+    {
+        base.Work(ref ingredient);
+    }
 }
