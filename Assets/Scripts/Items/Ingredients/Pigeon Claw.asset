@@ -14,6 +14,7 @@ MonoBehaviour:
   name: Pigeon Claw
   sprite: {fileID: 21300000, guid: 26838d34f5aeac84da61047745fd68eb, type: 3}
   form: solid
+  destruction: pure
   red: 1
   orange: 0
   yellow: 0

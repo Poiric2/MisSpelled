@@ -17,37 +17,43 @@ public class Crush_Station : Station {
     public override void  Job(ref Ingredient ingredient) {
         base.Job(ref ingredient);
         // Elemental Interactions
-        ingredient.red += ingredient.orange;
-		ingredient.orange = 0;
-		if (ingredient.blue > 0) {
+        ingredient.orange += ingredient.yellow;
+		ingredient.yellow = 0;
+		if (ingredient.purple > 0) {
 			base.Explode ();
 		}
 
-		// Physical Interactions
-		if (ingredient.form == "leafy") {
-			ingredient.form = "pasty";
-		}
+        // Physical Interactions
+        if (ingredient.form == "solid")
+        {
+            ingredient.form = "crumbling";
+        }
 
-		if (ingredient.form == "dried") {
-			ingredient.form = "powdery";
-		}
+        if (ingredient.form == "crumbling")
+        {
+            ingredient.form = "powdery";
+        }
 
-		if (ingredient.form == "frozen") {
-			ingredient.form = "shaved";
-		}
+        if (ingredient.form == "slippery")
+        {
+            ingredient.form = "plastic";
+        }
 
-		if (ingredient.form == "fractured") {
-			ingredient.form = "powdery";
-		}
+        if (ingredient.form == "plastic")
+        {
+            ingredient.form = "pasty";
+        }
 
-		if (ingredient.form == "squishy") {
-			ingredient.form = "pasty";
-		}
+        if (ingredient.form == "squishy")
+        {
+            ingredient.form = "leafy";
+        }
 
-		if (ingredient.form == "brittle") {
-			ingredient.form = "powdery";
-		}
-	}
+        if (ingredient.form == "leafy")
+        {
+            ingredient.form = "watery";
+        }
+    }
 
     public override void StartMode(Inventory inv)
     {

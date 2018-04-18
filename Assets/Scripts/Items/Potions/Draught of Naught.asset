@@ -8,13 +8,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d336fb7f2af3ed448b796aee9cf8f6f, type: 3}
+  m_Script: {fileID: 11500000, guid: deb33421da2242e42a171a4f37ea675a, type: 3}
   m_Name: Draught of Naught
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 3e2579aa4a59bc445abe9769340be8d2, type: 3}
+  name: Draught of Naught
+  sprite: {fileID: 0}
+  form: squishy
+  destruction: burnt
   red: 1
   orange: 0
   yellow: 3
   green: 0
   blue: 1
-  purple: 3
+  purple: 2
