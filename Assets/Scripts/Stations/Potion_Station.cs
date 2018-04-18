@@ -43,7 +43,7 @@ public class Potion_Station : Station {
             }
         }
 		ingredients.Add (ingredient);
-        for(int i = 0; i < 4; i++)
+        /*for(int i = 0; i < 4; i++)
         {
             if(HoldingImages[i].sprite == null)
             {
@@ -51,8 +51,8 @@ public class Potion_Station : Station {
                 HoldingImages[i].enabled = true;
                 break;
             }
-        }
-        inventory.Remove(ingredient);
+        }*/
+        //inventory.Remove(ingredient);
 		red += ingredient.red;
 		orange += ingredient.orange;
 		yellow += ingredient.yellow;
@@ -122,7 +122,7 @@ public class Potion_Station : Station {
     public override void StartMode(Inventory inv)
     {
         base.StartMode(inv);
-        PotionUI.SetActive(true);
+        //PotionUI.SetActive(true);
     }
 
     public override void EndMode()
@@ -131,11 +131,11 @@ public class Potion_Station : Station {
         foreach (Ingredient e in ingredients)
             inventory.Add(e);
         ingredients = new List<Ingredient>();
-        foreach (Image image in HoldingImages)
+        /*foreach (Image image in HoldingImages)
         {
             image.sprite = null;
             image.enabled = false;
         }
-        PotionUI.SetActive(false);
+        PotionUI.SetActive(false);*/
     }
 }

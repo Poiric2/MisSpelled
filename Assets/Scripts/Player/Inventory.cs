@@ -73,7 +73,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void Remove(Item x)
+    public void Remove(ref Item x)
     {
         for (int i = 0; i < inventorySize; i++)
         {
@@ -104,6 +104,8 @@ public class Inventory : MonoBehaviour
                 texts[i].text = items[i].name;
                 items[i + 1] = null;
                 images[i + 1].enabled = false;
+                texts[i + 1].text = "";
+                counts[i + 1].text = "";
             }
         }
     }

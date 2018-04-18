@@ -88,7 +88,9 @@ public class PlayerController : MonoBehaviour {
             if (inventory.dragPrimed)
             {
                 Ingredient tmp = (Ingredient)inventory.selected;
-                currStation.Job(ref tmp);
+                currStation.Work(ref tmp);
+                inventory.Remove(ref inventory.selected);
+                inventory.UpdateCounts();
             }
             inventory.UnDrag();
             dragging = false;
