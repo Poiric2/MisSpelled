@@ -10,9 +10,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Ginseng
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   name: Ginseng
-  sprite: {fileID: 21300000, guid: f3d92ea37eecae645b73982cc35cc682, type: 3}
+  sprite: {fileID: 21300000, guid: 5578a72d222c3e448a0a8d1616f76f6e, type: 3}
+  count: 0
   form: slippery
   destruction: pure
   red: 1

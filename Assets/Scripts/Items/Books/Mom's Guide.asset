@@ -13,5 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Mom's Note
   page_images:
-  - {fileID: 21300000, guid: beb1d4ecf9bd4f74e94d4d87cf13a6a8, type: 3}
-  - {fileID: 21300000, guid: f3c6597462cb0174ebcd55aa7059e0d6, type: 3}
+  - {fileID: 21300000, guid: 765e5dc4444158c4da7b981142c2cd9d, type: 3}
+  - {fileID: 21300000, guid: 8be4ab3990e30634a8fdceaf5330203c, type: 3}
+  - {fileID: 21300000, guid: 483dd494fa4e1634a9614d0dc08bdd11, type: 3}

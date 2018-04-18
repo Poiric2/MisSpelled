@@ -10,9 +10,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Frog's_Eye
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   name: Frog's Eye
-  sprite: {fileID: 21300000, guid: 6995b362aa6560448b589f30bdcd858d, type: 3}
+  sprite: {fileID: 21300000, guid: f8c27b37fa707b44692866f0eb8f4769, type: 3}
+  count: 0
   form: squishy
   destruction: pure
   red: 1

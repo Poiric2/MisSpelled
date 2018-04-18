@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Instructions
   page_images:
-  - {fileID: 21300000, guid: f1d2f1b8300dd594aac2319555c59a4f, type: 3}
-  - {fileID: 21300000, guid: be53363440f23a54d835d77034369c4e, type: 3}
-  - {fileID: 21300000, guid: 71df344cc36a203418ccf9d8932c2c8f, type: 3}
-  - {fileID: 21300000, guid: 48ab8c3b1b02c364992e2f483d2acb90, type: 3}
-  - {fileID: 21300000, guid: 05c799ccbf1b48e49acdfe9ed9a431bc, type: 3}
-  - {fileID: 21300000, guid: ca1201bfeff6d044c8a564ab89d2e67e, type: 3}
-  - {fileID: 21300000, guid: 537ee9d7d25f2ed4c9aa8d9b1ed9b6e3, type: 3}
-  - {fileID: 21300000, guid: b9cfdb8af87047043a3a69a6fd9b27fb, type: 3}
-  - {fileID: 21300000, guid: 20940afa27f37094c92f62738e3c3ba4, type: 3}
-  - {fileID: 21300000, guid: 9c9c36ca5d45cb24298dfbb0226d1f82, type: 3}
-  - {fileID: 21300000, guid: c5a337c53bf9c6d40af1c2d66e093dbb, type: 3}
+  - {fileID: 21300000, guid: 0eea0348759ec2b4ba8061234efb453b, type: 3}
+  - {fileID: 21300000, guid: 9e6cb3175b8429c42a400acfcb307f0b, type: 3}
+  - {fileID: 21300000, guid: b49bd359c94d09849975279fc8b38cf1, type: 3}
+  - {fileID: 21300000, guid: 15b9831cede797b429658b9b9d93e8ed, type: 3}
+  - {fileID: 21300000, guid: 139ef6a1c935f3d4f85f98fdcf9d57a0, type: 3}
+  - {fileID: 21300000, guid: ca478229922d3ab4bb651658dadca266, type: 3}
+  - {fileID: 21300000, guid: 5d8b2cfb4f2400e4a8de40b64d42a061, type: 3}
+  - {fileID: 21300000, guid: af1ac15326d4dcf409a66cd3fdb6e8b8, type: 3}
+  - {fileID: 21300000, guid: e2cb8f83d459fe741a406978e5715802, type: 3}
+  - {fileID: 21300000, guid: 2308bba847ec3264b84b09e6c9a96cec, type: 3}
+  - {fileID: 21300000, guid: db7d13152a760df43a82ce0bade0e08b, type: 3}

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Name: Fly Wings
   m_EditorClassIdentifier: 
   name: Fly Wing
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 09f6f58201b694648802c740ad93688c, type: 3}
+  count: 0
   form: squishy
+  destruction: pure
   red: 0
   orange: 0
   yellow: 0

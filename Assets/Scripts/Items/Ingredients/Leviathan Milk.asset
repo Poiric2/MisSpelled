@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Name: Leviathan Milk
   m_EditorClassIdentifier: 
   name: Leviathan Milk
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: ce6c8370cce2a8c4193893c7e668b82d, type: 3}
+  count: 0
   form: watery
+  destruction: pure
   red: 0
   orange: 1
   yellow: 0
