@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: Lemon Zest
   m_EditorClassIdentifier: 
   name: Lemon Zest
-  sprite: {fileID: 21300000, guid: ca398d35e57a6dd428a8d3f14b985f3c, type: 3}
+  sprite: {fileID: 21300000, guid: 2f745f9cb0966c247be3cdc371d0d4b1, type: 3}
+  count: 0
   form: leafy
   destruction: pure
   red: 0

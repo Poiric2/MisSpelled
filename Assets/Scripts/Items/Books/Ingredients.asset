@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Name: Ingredients
   m_EditorClassIdentifier: 
   title: 
-  pgs: []
+  page_images:
+  - {fileID: 21300000, guid: 5f0950597bcc3614d811b2292aac1e1a, type: 3}
+  - {fileID: 21300000, guid: cca1faedd08eaf64bbbd62876931b2ad, type: 3}
+  - {fileID: 21300000, guid: 682cd650cdbb50042b2e5c792ec0f261, type: 3}
+  - {fileID: 21300000, guid: 45432356f94ef2e468862fc537ed4cda, type: 3}
+  - {fileID: 21300000, guid: ba3cd7b9fb101434cbf17ae0ccf4156c, type: 3}

@@ -13,6 +13,8 @@ public class Station : MonoBehaviour {
     public AudioSource source;
     public Animator animator;
 
+    public int workTime = 10;
+
     protected Ingredient ingredient;
     protected Inventory inventory;
 
@@ -34,6 +36,10 @@ public class Station : MonoBehaviour {
 	
 	// Update is called once per frame
 	protected virtual void Update () {
+        if (working)
+        {
+            Work();
+        }
 	}
 
     public virtual void StartMode(Inventory inv){
@@ -48,7 +54,7 @@ public class Station : MonoBehaviour {
     }
 
     protected virtual void Work()
-    { 
+    {
     }
 
     public virtual void Job(ref Ingredient ingredient)
@@ -56,6 +62,8 @@ public class Station : MonoBehaviour {
         source.Play();
         if(animator != null)
             animator.SetTrigger("Job");
+        ingredient.count = ingredient.count + 1;
+        inventory.UpdateCounts();
     }
 
     public virtual void EndMode()

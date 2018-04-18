@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
     public Image[] primes = new Image[inventorySize];
     public Item[] items = new Item[inventorySize];
     public Text[] texts = new Text[inventorySize];
+    public Text[] counts = new Text[inventorySize];
 
     public GameObject dragUI;
     public Image dragImage;
@@ -31,6 +32,7 @@ public class Inventory : MonoBehaviour
             if (items[i] != null)
             {
                 images[i].sprite = items[i].sprite;
+                counts[i].text = items[i].count.ToString();
                 texts[i].text = items[i].name;
                 images[i].enabled = true;
             }  
@@ -50,6 +52,7 @@ public class Inventory : MonoBehaviour
             {
                 items[i] = Object.Instantiate(x);
                 images[i].sprite = items[i].sprite;
+                counts[i].text = items[i].count.ToString();
                 texts[i].text = items[i].name;
                 images[i].enabled = true;
                 return;
@@ -62,6 +65,7 @@ public class Inventory : MonoBehaviour
             if(items[i] == null){
                 items[i] = x;
                 images[i].sprite = x.sprite;
+                counts[i].text = items[i].count.ToString();
                 texts[i].text = x.name;
                 images[i].enabled = true;
                 return;
@@ -78,6 +82,7 @@ public class Inventory : MonoBehaviour
                 items[i] = null;
                 images[i].sprite = null;
                 images[i].enabled = false;
+                counts[i].text = "";
                 texts[i].text = null;
                 highlights[i].enabled = false;
                 UpdateInventory();
@@ -95,6 +100,7 @@ public class Inventory : MonoBehaviour
                 items[i] = items[i + 1];
                 images[i].sprite = items[i].sprite;
                 images[i].enabled = true;
+                counts[i].text = items[i].count.ToString();
                 texts[i].text = items[i].name;
                 items[i + 1] = null;
                 images[i + 1].enabled = false;
@@ -173,5 +179,16 @@ public class Inventory : MonoBehaviour
     {
         InvDisp.SetActive(!InvDisp.activeSelf);
         open = !open;
+    }
+
+    public void UpdateCounts()
+    {
+        for(int j = 0; j < 16; j++)
+        {
+            if (items[j] != null)
+                counts[j].text = items[j].count.ToString();
+            else
+                break;
+        }
     }
 }
