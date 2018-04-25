@@ -9,7 +9,7 @@ public class Trophy : Station {
     bool c;
     bool d;
 
-    public List<Potion> potions;
+	public List<Ingredient> potions;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -27,7 +27,7 @@ public class Trophy : Station {
 
     public override void Work(ref Ingredient ingredient)
     {
-        foreach(Item i in inventory.items)
+        foreach(Ingredient i in inventory.items)
         {
             if (i == potions[0])
                 a = true;

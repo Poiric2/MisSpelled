@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
     public Image[] images = new Image[inventorySize];
     public Image[] highlights = new Image[inventorySize];
     public Image[] primes = new Image[inventorySize];
-    public Item[] items = new Item[inventorySize];
+    public Ingredient[] items = new Ingredient[inventorySize];
     public Text[] texts = new Text[inventorySize];
     public Text[] counts = new Text[inventorySize];
 
@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
     public Image dragImage;
     public Image dragPrime;
     public bool dragPrimed;
-    public Item selected;
+    public Ingredient selected;
 
     int currHighlight = 0;
     public bool open = false;
@@ -44,7 +44,7 @@ public class Inventory : MonoBehaviour
     {
     }
 
-    public void AddNewItem(Item x)
+    public void AddNewItem(Ingredient x)
     {
         for (int i = 0; i < inventorySize; i++)
         {
@@ -60,7 +60,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void Add(Item x){
+    public void Add(Ingredient x){
         for (int i = 0; i < inventorySize; i++){
             if(items[i] == null){
                 items[i] = x;
@@ -73,7 +73,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void Remove(ref Item x)
+    public void Remove(ref Ingredient x)
     {
         for (int i = 0; i < inventorySize; i++)
         {

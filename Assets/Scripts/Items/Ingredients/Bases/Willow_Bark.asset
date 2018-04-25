@@ -11,14 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd12c58e3483c164e9d4d8fef7225012, type: 3}
   m_Name: Willow_Bark
   m_EditorClassIdentifier: 
-  name: 
+  name: Willow Bark
   sprite: {fileID: 0}
   count: 0
-  form: 
+  form: solid
   destruction: pure
   red: 0
-  orange: 0
-  yellow: 0
-  green: 0
+  orange: 1
+  yellow: 1
+  green: 1
   blue: 0
   purple: 0

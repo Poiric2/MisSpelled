@@ -34,15 +34,15 @@ public class Station : MonoBehaviour {
     public Text dsc;
     public Image[] progress;
     public Image[] station_items;
-    public Item[] items;
+    public Ingredient[] items;
     public Text[] counts;
     public Text[] item_names;
     public Image[] primes;
-    public Item selected;
+    public Ingredient selected;
     public Image dragPrime;
     public Image dragImage;
     public Image working_image;
-    public Item working_item;
+    public Ingredient working_item;
     public Text item_text;
     public GameObject dragUI;
 
@@ -282,7 +282,7 @@ public class Station : MonoBehaviour {
 		print ("Explode!");
 	}
 
-    public void Remove(ref Item x)
+    public void Remove(ref Ingredient x)
     {
         for (int i = 0; i < 4; i++)
         {

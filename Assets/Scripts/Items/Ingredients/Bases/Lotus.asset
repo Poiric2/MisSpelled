@@ -11,14 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd12c58e3483c164e9d4d8fef7225012, type: 3}
   m_Name: Lotus
   m_EditorClassIdentifier: 
-  name: 
+  name: Lotus
   sprite: {fileID: 0}
   count: 0
-  form: 
+  form: leafy
   destruction: pure
   red: 0
   orange: 0
   yellow: 0
-  green: 0
+  green: 2
   blue: 0
   purple: 0

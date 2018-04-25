@@ -63,7 +63,7 @@ public class Potion_Station : Station {
 		purple += ingredient.purple;
 	}
 
-	Recipe brew_potion(Ingredient recipe) {
+	Ingredient brew_potion(Ingredient recipe) {
 		return recipe;
 	}
 
