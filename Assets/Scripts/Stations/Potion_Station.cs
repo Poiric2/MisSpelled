@@ -13,7 +13,7 @@ public class Potion_Station : Station {
 	public int blue;
 	public int purple;
 
-	public List<Recipe> recipes;
+	public List<Ingredient> recipes;
 	protected List<Image> HoldingImages;
 	protected bool success;
 
@@ -63,13 +63,13 @@ public class Potion_Station : Station {
 		purple += ingredient.purple;
 	}
 
-	Recipe brew_potion(Recipe recipe) {
+	Recipe brew_potion(Ingredient recipe) {
 		return recipe;
 	}
 
 	void attempt_brew() {
 		// check against recipes
-		foreach (Recipe recipe in recipes) {
+		foreach (Ingredient recipe in recipes) {
 			success = true;
 
 			if (recipe.red != red) {
