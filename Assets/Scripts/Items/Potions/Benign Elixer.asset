@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d336fb7f2af3ed448b796aee9cf8f6f, type: 3}
+  m_Name: Benign Elixer
+  m_EditorClassIdentifier: 
+  name: Benign Elixer
+  sprite: {fileID: 0}
+  count: 0
+  form: squishy
+  destruction: 
+  red: 1
+  orange: 1
+  yellow: 1
+  green: 1
+  blue: 0
+  purple: 1

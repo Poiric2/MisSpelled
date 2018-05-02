@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ingredient_Station : Station {
 
+    public GameObject work_UI;
+
 	// Use this for initialization
 	protected override void Start () {
 		
@@ -76,6 +78,7 @@ public class Ingredient_Station : Station {
         inventory.Display();
         ingredient = null;
         operated = true;
+        work_UI.SetActive(false);
     }
 
     public override void EndMode()
@@ -85,5 +88,6 @@ public class Ingredient_Station : Station {
         StationUI.SetActive(false);
         inventory.Hide();
         operated = false;
+        work_UI.SetActive(true);
     }
 }

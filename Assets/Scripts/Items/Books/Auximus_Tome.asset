@@ -13,4 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Auximus Tome
   page_images:
-  - {fileID: 21300000, guid: 9fcce56d4557d5f4ea34968ac1383896, type: 3}
+  - {fileID: 21300000, guid: 15abc52a5643c8c47ab73ef1907ca699, type: 3}
+  - {fileID: 21300000, guid: 489e005618342fb4ca86fee9bf2b2414, type: 3}
+  - {fileID: 21300000, guid: 4872f98d9883a734b85c887e27b2bdda, type: 3}
+  - {fileID: 21300000, guid: cc023a7221325a646ba3dd2d8d48196c, type: 3}
+  - {fileID: 21300000, guid: dac3170bf7eaa1547a49b111675eb3c8, type: 3}
+  - {fileID: 21300000, guid: 4d8e26f75649a404989a9e975359bcd7, type: 3}

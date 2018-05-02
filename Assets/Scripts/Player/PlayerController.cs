@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour {
                 ClearOutline();
             }
         }
-        if (Input.GetKeyDown(KeyCode.L) && !canInteract)
+        if (Input.GetKeyDown(KeyCode.Escape) && !canInteract)
             SwapMovementState();
 
         if (Input.GetKeyDown(KeyCode.E) && canInteract)

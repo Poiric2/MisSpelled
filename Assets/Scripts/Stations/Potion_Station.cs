@@ -13,14 +13,16 @@ public class Potion_Station : Station {
 	public int blue;
 	public int purple;
 
-	public List<Recipe> recipes;
-	protected List<Image> HoldingImages;
+	public List<Ingredient> recipes;
+	public List<Image> HoldingImages;
+    public GameObject PotionUI;
+    public GameObject Work_Item;
 	protected bool success;
 
 	// Use this for initialization
 	protected override void Start () {
 		ingredients = new List<Ingredient> ();
-		HoldingImages = new List<Image> ();
+		//HoldingImages = new List<Image> ();
 		red = 0;
 		orange = 0;
 		yellow = 0;
@@ -29,73 +31,68 @@ public class Potion_Station : Station {
 		purple = 0;
 		success = false;
     }
+    
 
     // Update is called once per frame
     protected override void Update()
     {
         base.Update();
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            attempt_brew();
+        }
     }
 
-    public override void Job(ref Ingredient ingredient) {
-        foreach(Ingredient e in ingredients)
+    public override void Work(ref Ingredient ingredient)
+    {
+        for (int i = 0; i < 4; i++)
         {
-            if(e == ingredient)
-            {
-                return;
-            }
-        }
-		ingredients.Add (ingredient);
-        for(int i = 0; i < 4; i++)
-        {
-            if(HoldingImages[i].sprite == null)
+            if (HoldingImages[i].sprite == null)
             {
                 HoldingImages[i].sprite = ingredient.sprite;
                 HoldingImages[i].enabled = true;
-                break;
+                ingredients.Add(ingredient);
+                red += ingredient.red;
+                orange += ingredient.orange;
+                yellow += ingredient.yellow;
+                green += ingredient.green;
+                blue += ingredient.blue;
+                purple += ingredient.purple;
+                return;
             }
         }
-        //inventory.Remove(ingredient);
-		red += ingredient.red;
-		orange += ingredient.orange;
-		yellow += ingredient.yellow;
-		green += ingredient.green;
-		blue += ingredient.blue;
-		purple += ingredient.purple;
-	}
-
-	Recipe brew_potion(Recipe recipe) {
-		return recipe;
-	}
+    }
 
 	void attempt_brew() {
 		// check against recipes
-		foreach (Recipe recipe in recipes) {
+		foreach (Ingredient p in recipes) {
 			success = true;
 
-			if (recipe.red != red) {
+			if (p.red != red) {
 				success = false;
 			}
-			if (recipe.orange != orange) {
+			if (p.orange != orange) {
 				success = false;
 			}
-			if (recipe.orange != orange) {
+			if (p.orange != orange) {
 				success = false;
 			}
-			if (recipe.yellow != yellow) {
+			if (p.yellow != yellow) {
 				success = false;
 			}
-			if (recipe.green != green) {
+			if (p.green != green) {
 				success = false;
 			}
-			if (recipe.blue != blue) {
+			if (p.blue != blue) {
 				success = false;
 			}
-			if (recipe.purple != purple) {
+			if (p.purple != purple) {
 				success = false;
 			}
 
 			if (success == true) {
-				brew_potion (recipe);
+                Ingredient tmp = Object.Instantiate(p);
+                PlaceInInventory(ref tmp);
 
 				red = 0;
 				orange = 0;
@@ -117,12 +114,20 @@ public class Potion_Station : Station {
 				purple = 0;
 			}
 		}
-	}
+        ingredients = new List<Ingredient>();
+        foreach (Image i in HoldingImages)
+        {
+            i.sprite = null;
+            i.enabled = false;
+        }
+    }
 
     public override void StartMode(Inventory inv)
     {
         base.StartMode(inv);
-        // PotionUI.SetActive(true);
+        PotionUI.SetActive(true);
+        Work_Item.SetActive(false);
+        bar.SetActive(false);
     }
 
     public override void EndMode()
@@ -136,6 +141,13 @@ public class Potion_Station : Station {
             image.sprite = null;
             image.enabled = false;
         }
-        // PotionUI.SetActive(false);
+        PotionUI.SetActive(false);
+        Work_Item.SetActive(true);
+        red = 0;
+        orange = 0;
+        yellow = 0;
+        green = 0;
+        blue = 0;
+        purple = 0;
     }
 }

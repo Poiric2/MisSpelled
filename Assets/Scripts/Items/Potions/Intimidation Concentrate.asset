@@ -8,16 +8,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deb33421da2242e42a171a4f37ea675a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d336fb7f2af3ed448b796aee9cf8f6f, type: 3}
   m_Name: Intimidation Concentrate
   m_EditorClassIdentifier: 
   name: Intimidation Concentrate
   sprite: {fileID: 0}
-  form: squishy
-  destruction: frozen
-  red: 1
-  orange: 1
+  count: 0
+  form: 
+  destruction: 
+  red: 0
+  orange: 0
   yellow: 0
-  green: 1
-  blue: 4
+  green: 0
+  blue: 0
   purple: 0

@@ -236,6 +236,23 @@ public class Station : MonoBehaviour {
         return;
     }
 
+    public void PlaceInInventory(ref Potion x)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            if (items[i] == null)
+            {
+                items[i] = x;
+                working_item = null;
+                if (operated)
+                    InitInventory();
+                return;
+            }
+        }
+        full = true;
+        return;
+    }
+
     public void Prime(int i)
     {
         if (primes[i] != null)
