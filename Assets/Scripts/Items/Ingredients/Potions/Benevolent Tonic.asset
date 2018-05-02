@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
-  m_Name: Grotesque Incarnate
+  m_Name: Benevolent Tonic
   m_EditorClassIdentifier: 
-  name: G. Concentrate
-  sprite: {fileID: 21300000, guid: 11eed1ba8fa6561409efbcfa762833c1, type: 3}
+  name: Benevolent T.
+  sprite: {fileID: 21300000, guid: 3a0e14f205b01df4ca098ba65cbd127a, type: 3}
   count: 0
   form: slippery
   destruction: pure
-  red: 2
-  orange: 1
+  red: 0
+  orange: 0
   yellow: 0
-  green: 1
-  blue: 1
+  green: 8
+  blue: 0
   purple: 0

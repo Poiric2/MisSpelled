@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lab_Alt.unity
     guid: 94b6db15f35698342a62dd154a904e11
+  - enabled: 1
+    path: Assets/Scenes/Epilogue.unity
+    guid: dda9b1ab965512148a6fdde8bc8bfc2f

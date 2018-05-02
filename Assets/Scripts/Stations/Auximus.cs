@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Auximus : Station {
 
@@ -35,7 +36,7 @@ public class Auximus : Station {
                     if (newPotion)
                     {
                         source.Play();
-                        for (int i = 0; i < 4; i++)
+                        for (int i = 0; i < 12; i++)
                         {
                             if (currPotions[i] == null)
                             {
@@ -95,7 +96,6 @@ public class Auximus : Station {
 
     private void EndState()
     {
-        print("the end");
-        //trigger the end of the game
+        SceneManager.LoadScene("Epilogue");
     }
 }

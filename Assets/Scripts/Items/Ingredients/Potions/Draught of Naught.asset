@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Draught of Naught
   m_EditorClassIdentifier: 
   name: D. Naught
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: e11af2dcfa847bb4ba52b5c2cc69bfd2, type: 3}
   count: 0
   form: squishy
   destruction: pure

@@ -76,6 +76,10 @@ public class PlayerController : MonoBehaviour {
                         inventory.Drag(i);
                         dragging = true;
                     }
+                    if (Input.GetKeyDown(KeyCode.Period))
+                    {
+                        inventory.Remove(ref inventory.items[i]);
+                    }
                 }
                 else
                 {

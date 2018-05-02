@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
-  m_Name: Grotesque Incarnate
+  m_Name: Intimidation Concentrate
   m_EditorClassIdentifier: 
-  name: G. Concentrate
-  sprite: {fileID: 21300000, guid: 11eed1ba8fa6561409efbcfa762833c1, type: 3}
+  name: Intimidation C.
+  sprite: {fileID: 21300000, guid: 7c9a01ab11010b74592400dd49f3853f, type: 3}
   count: 0
-  form: slippery
-  destruction: pure
-  red: 2
+  form: squishy
+  destruction: frozen
+  red: 1
   orange: 1
   yellow: 0
   green: 1
-  blue: 1
+  blue: 4
   purple: 0

@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
-  m_Name: Grotesque Incarnate
+  m_Name: Cordial of Respite
   m_EditorClassIdentifier: 
-  name: G. Concentrate
-  sprite: {fileID: 21300000, guid: 11eed1ba8fa6561409efbcfa762833c1, type: 3}
+  name: C. of Respite
+  sprite: {fileID: 21300000, guid: f06506bb48645174db56f0ff72f13662, type: 3}
   count: 0
-  form: slippery
+  form: plastic
   destruction: pure
-  red: 2
-  orange: 1
-  yellow: 0
-  green: 1
+  red: 0
+  orange: 0
+  yellow: 2
+  green: 4
   blue: 1
-  purple: 0
+  purple: 2

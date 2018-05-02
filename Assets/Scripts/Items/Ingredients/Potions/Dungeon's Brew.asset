@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Dungeon's Brew
   m_EditorClassIdentifier: 
   name: Dungeon's B.
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c52657e6e82415d4aac2cd770cf5e040, type: 3}
   count: 0
   form: slippery
   destruction: pure

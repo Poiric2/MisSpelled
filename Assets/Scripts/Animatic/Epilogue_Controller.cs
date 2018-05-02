@@ -25,7 +25,7 @@ public class Epilogue_Controller : MonoBehaviour {
 
         else if (Input.GetMouseButtonDown(0))
         {
-
+            Application.Quit();
         }
     }
 }

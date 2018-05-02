@@ -14,5 +14,5 @@ MonoBehaviour:
   title: Mom's Note
   page_images:
   - {fileID: 21300000, guid: edfca4b861473204bb821208d9d19e11, type: 3}
-  - {fileID: 21300000, guid: 42d102c60633a4a4fb5cdd64e3a687c5, type: 3}
-  - {fileID: 21300000, guid: f5a642b40cd2ad24c892e2ee026cd077, type: 3}
+  - {fileID: 21300000, guid: a000594be1333c9469040d38d1c02406, type: 3}
+  - {fileID: 21300000, guid: 138c0821364031a4d84e316c6c077ad8, type: 3}

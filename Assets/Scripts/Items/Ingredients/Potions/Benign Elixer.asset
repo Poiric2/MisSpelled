@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Benign Elixer
   m_EditorClassIdentifier: 
   name: B. Elixer
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: b3a413afe15d7394b983d19f2ed09a68, type: 3}
   count: 0
   form: squishy
   destruction: pure
