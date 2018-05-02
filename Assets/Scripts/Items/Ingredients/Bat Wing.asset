@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Bat Wing
   m_EditorClassIdentifier: 
   name: Bat Wing
-  sprite: {fileID: 21300000, guid: d164941dba0699e4a8c9e7627f15736a, type: 3}
+  sprite: {fileID: 21300000, guid: 76a6fa6b4c2bd7f4d9cce9452c462350, type: 3}
   count: 0
   form: slippery
   destruction: pure

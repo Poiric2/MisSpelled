@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Worm Resin
   m_EditorClassIdentifier: 
   name: Worm Resin
-  sprite: {fileID: 21300000, guid: 2fbebc883dd3d5c4ea9b91868668c2f7, type: 3}
+  sprite: {fileID: 21300000, guid: 75688dd17f2ed1e408b06ea6863e5211, type: 3}
   count: 0
   form: pasty
   destruction: pure

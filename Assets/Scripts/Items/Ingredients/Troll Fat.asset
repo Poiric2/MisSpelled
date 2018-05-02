@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Name: Troll Fat
   m_EditorClassIdentifier: 
   name: Troll Fat
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: f661264b71ee74340acf72684e6284f6, type: 3}
+  count: 0
   form: pasty
+  destruction: pure
   red: 0
   orange: 0
   yellow: 1
