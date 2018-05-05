@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: 96982b77d3d10644da209207c52e6979
+timeCreated: 1525522655
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: leaf:group
+    100004: leaf:group1
+    100006: leaf:group2
+    100008: leaf:group3
+    100010: leaf:group4
+    100012: leaf:group5
+    100014: leaf:group6
+    100016: leaf:group7
+    100018: leaf:group8
+    100020: leaf:group8_pasted__group4_pasted__pasted__group1_pasted__pasted__pasted__pCone1
+    100022: leaf:pasted__group
+    100024: leaf:pasted__group 1
+    100026: leaf:pasted__group 2
+    100028: leaf:pasted__group 3
+    100030: leaf:pasted__group 4
+    100032: leaf:pasted__group 5
+    100034: leaf:pasted__group 6
+    100036: leaf:pasted__group1
+    100038: leaf:pasted__group1 1
+    100040: leaf:pasted__group1 2
+    100042: leaf:pasted__group1 3
+    100044: leaf:pasted__group1 4
+    100046: leaf:pasted__group1 5
+    100048: leaf:pasted__group1 6
+    100050: leaf:pasted__group2
+    100052: leaf:pasted__group2 1
+    100054: leaf:pasted__group2 2
+    100056: leaf:pasted__group2 3
+    100058: leaf:pasted__group2 4
+    100060: leaf:pasted__group2 5
+    100062: leaf:pasted__group3
+    100064: leaf:pasted__group3 1
+    100066: leaf:pasted__group4
+    100068: leaf:pasted__group4 1
+    100070: leaf:pasted__group5
+    100072: leaf:pasted__group5 1
+    100074: leaf:pasted__group6
+    100076: leaf:pasted__group6 1
+    100078: leaf:pasted__pasted__group
+    100080: leaf:pasted__pasted__group 1
+    100082: leaf:pasted__pasted__group 10
+    100084: leaf:pasted__pasted__group 11
+    100086: leaf:pasted__pasted__group 12
+    100088: leaf:pasted__pasted__group 13
+    100090: leaf:pasted__pasted__group 2
+    100092: leaf:pasted__pasted__group 3
+    100094: leaf:pasted__pasted__group 4
+    100096: leaf:pasted__pasted__group 5
+    100098: leaf:pasted__pasted__group 6
+    100100: leaf:pasted__pasted__group 7
+    100102: leaf:pasted__pasted__group 8
+    100104: leaf:pasted__pasted__group 9
+    100106: leaf:pasted__pasted__group1
+    100108: leaf:pasted__pasted__group1 1
+    100110: leaf:pasted__pasted__group1 10
+    100112: leaf:pasted__pasted__group1 11
+    100114: leaf:pasted__pasted__group1 12
+    100116: leaf:pasted__pasted__group1 13
+    100118: leaf:pasted__pasted__group1 2
+    100120: leaf:pasted__pasted__group1 3
+    100122: leaf:pasted__pasted__group1 4
+    100124: leaf:pasted__pasted__group1 5
+    100126: leaf:pasted__pasted__group1 6
+    100128: leaf:pasted__pasted__group1 7
+    100130: leaf:pasted__pasted__group1 8
+    100132: leaf:pasted__pasted__group1 9
+    100134: leaf:pasted__pasted__group2
+    100136: leaf:pasted__pasted__group2 1
+    100138: leaf:pasted__pasted__group2 2
+    100140: leaf:pasted__pasted__group2 3
+    100142: leaf:pasted__pasted__group2 4
+    100144: leaf:pasted__pasted__group2 5
+    100146: leaf:pasted__pasted__group2 6
+    100148: leaf:pasted__pasted__group2 7
+    100150: leaf:pasted__pasted__pasted__group
+    100152: leaf:pasted__pasted__pasted__group 1
+    100154: leaf:pasted__pasted__pasted__group 2
+    100156: leaf:pasted__pasted__pasted__group 3
+    100158: leaf:pasted__pasted__pasted__group 4
+    100160: leaf:pasted__pasted__pasted__group 5
+    100162: leaf:pasted__pasted__pasted__group 6
+    100164: leaf:pasted__pasted__pasted__group 7
+    100166: leaf:pasted__pasted__pasted__group1
+    100168: leaf:pasted__pasted__pasted__group1 1
+    100170: leaf:pasted__pasted__pasted__group1 2
+    100172: leaf:pasted__pasted__pasted__group1 3
+    100174: leaf:pasted__pasted__pasted__group1 4
+    100176: leaf:pasted__pasted__pasted__group1 5
+    100178: leaf:pasted__pasted__pasted__group1 6
+    100180: leaf:pasted__pasted__pasted__group1 7
+    100182: leaf:pasted__pasted__pasted__pasted__pCone1
+    100184: leaf:pasted__pasted__pasted__pasted__pCone1 1
+    100186: leaf:pasted__pasted__pasted__pasted__pCone1 10
+    100188: leaf:pasted__pasted__pasted__pasted__pCone1 11
+    100190: leaf:pasted__pasted__pasted__pasted__pCone1 12
+    100192: leaf:pasted__pasted__pasted__pasted__pCone1 13
+    100194: leaf:pasted__pasted__pasted__pasted__pCone1 14
+    100196: leaf:pasted__pasted__pasted__pasted__pCone1 15
+    100198: leaf:pasted__pasted__pasted__pasted__pCone1 2
+    100200: leaf:pasted__pasted__pasted__pasted__pCone1 3
+    100202: leaf:pasted__pasted__pasted__pasted__pCone1 4
+    100204: leaf:pasted__pasted__pasted__pasted__pCone1 5
+    100206: leaf:pasted__pasted__pasted__pasted__pCone1 6
+    100208: leaf:pasted__pasted__pasted__pasted__pCone1 7
+    100210: leaf:pasted__pasted__pasted__pasted__pCone1 8
+    100212: leaf:pasted__pasted__pasted__pasted__pCone1 9
+    100214: leaf:pasted__pasted__pasted__pCone1
+    100216: leaf:pasted__pasted__pasted__pCone1 1
+    100218: leaf:pasted__pasted__pasted__pCone1 10
+    100220: leaf:pasted__pasted__pasted__pCone1 11
+    100222: leaf:pasted__pasted__pasted__pCone1 12
+    100224: leaf:pasted__pasted__pasted__pCone1 13
+    100226: leaf:pasted__pasted__pasted__pCone1 14
+    100228: leaf:pasted__pasted__pasted__pCone1 15
+    100230: leaf:pasted__pasted__pasted__pCone1 16
+    100232: leaf:pasted__pasted__pasted__pCone1 17
+    100234: leaf:pasted__pasted__pasted__pCone1 18
+    100236: leaf:pasted__pasted__pasted__pCone1 19
+    100238: leaf:pasted__pasted__pasted__pCone1 2
+    100240: leaf:pasted__pasted__pasted__pCone1 20
+    100242: leaf:pasted__pasted__pasted__pCone1 21
+    100244: leaf:pasted__pasted__pasted__pCone1 22
+    100246: leaf:pasted__pasted__pasted__pCone1 23
+    100248: leaf:pasted__pasted__pasted__pCone1 24
+    100250: leaf:pasted__pasted__pasted__pCone1 25
+    100252: leaf:pasted__pasted__pasted__pCone1 26
+    100254: leaf:pasted__pasted__pasted__pCone1 27
+    100256: leaf:pasted__pasted__pasted__pCone1 3
+    100258: leaf:pasted__pasted__pasted__pCone1 4
+    100260: leaf:pasted__pasted__pasted__pCone1 5
+    100262: leaf:pasted__pasted__pasted__pCone1 6
+    100264: leaf:pasted__pasted__pasted__pCone1 7
+    100266: leaf:pasted__pasted__pasted__pCone1 8
+    100268: leaf:pasted__pasted__pasted__pCone1 9
+    100270: leaf:pasted__pasted__pCone1
+    100272: leaf:pasted__pasted__pCone1 1
+    100274: leaf:pasted__pasted__pCone1 10
+    100276: leaf:pasted__pasted__pCone1 11
+    100278: leaf:pasted__pasted__pCone1 12
+    100280: leaf:pasted__pasted__pCone1 13
+    100282: leaf:pasted__pasted__pCone1 14
+    100284: leaf:pasted__pasted__pCone1 15
+    100286: leaf:pasted__pasted__pCone1 16
+    100288: leaf:pasted__pasted__pCone1 17
+    100290: leaf:pasted__pasted__pCone1 18
+    100292: leaf:pasted__pasted__pCone1 19
+    100294: leaf:pasted__pasted__pCone1 2
+    100296: leaf:pasted__pasted__pCone1 20
+    100298: leaf:pasted__pasted__pCone1 21
+    100300: leaf:pasted__pasted__pCone1 3
+    100302: leaf:pasted__pasted__pCone1 4
+    100304: leaf:pasted__pasted__pCone1 5
+    100306: leaf:pasted__pasted__pCone1 6
+    100308: leaf:pasted__pasted__pCone1 7
+    100310: leaf:pasted__pasted__pCone1 8
+    100312: leaf:pasted__pasted__pCone1 9
+    100314: leaf:pasted__pCone1
+    100316: leaf:pasted__pCone1 1
+    100318: leaf:pasted__pCone1 2
+    100320: leaf:pasted__pCone1 3
+    100322: leaf:pasted__pCone1 4
+    100324: leaf:pasted__pCone1 5
+    100326: leaf:pasted__pCone1 6
+    100328: leaf:pasted__pCone1 7
+    100330: leaf:pasted__pCylinder1
+    100332: leaf:pasted__pCylinder1 1
+    100334: leaf:pCone1
+    100336: leaf:pCylinder1
+    100338: leaf:polySurface62
+    100340: leaf:transform1
+    100342: leaf:transform10
+    100344: leaf:transform11
+    100346: leaf:transform12
+    100348: leaf:transform13
+    100350: leaf:transform14
+    100352: leaf:transform15
+    100354: leaf:transform16
+    100356: leaf:transform17
+    100358: leaf:transform18
+    100360: leaf:transform19
+    100362: leaf:transform2
+    100364: leaf:transform20
+    100366: leaf:transform21
+    100368: leaf:transform22
+    100370: leaf:transform23
+    100372: leaf:transform24
+    100374: leaf:transform25
+    100376: leaf:transform26
+    100378: leaf:transform27
+    100380: leaf:transform28
+    100382: leaf:transform29
+    100384: leaf:transform3
+    100386: leaf:transform30
+    100388: leaf:transform31
+    100390: leaf:transform32
+    100392: leaf:transform33
+    100394: leaf:transform34
+    100396: leaf:transform35
+    100398: leaf:transform36
+    100400: leaf:transform37
+    100402: leaf:transform38
+    100404: leaf:transform39
+    100406: leaf:transform4
+    100408: leaf:transform40
+    100410: leaf:transform41
+    100412: leaf:transform42
+    100414: leaf:transform43
+    100416: leaf:transform44
+    100418: leaf:transform45
+    100420: leaf:transform46
+    100422: leaf:transform47
+    100424: leaf:transform48
+    100426: leaf:transform49
+    100428: leaf:transform5
+    100430: leaf:transform50
+    100432: leaf:transform51
+    100434: leaf:transform52
+    100436: leaf:transform53
+    100438: leaf:transform54
+    100440: leaf:transform55
+    100442: leaf:transform56
+    100444: leaf:transform57
+    100446: leaf:transform58
+    100448: leaf:transform59
+    100450: leaf:transform6
+    100452: leaf:transform60
+    100454: leaf:transform61
+    100456: leaf:transform62
+    100458: leaf:transform63
+    100460: leaf:transform64
+    100462: leaf:transform65
+    100464: leaf:transform66
+    100466: leaf:transform67
+    100468: leaf:transform68
+    100470: leaf:transform69
+    100472: leaf:transform7
+    100474: leaf:transform70
+    100476: leaf:transform71
+    100478: leaf:transform72
+    100480: leaf:transform73
+    100482: leaf:transform74
+    100484: leaf:transform75
+    100486: leaf:transform76
+    100488: leaf:transform77
+    100490: leaf:transform78
+    100492: leaf:transform79
+    100494: leaf:transform8
+    100496: leaf:transform9
+    100498: pCone2
+    100500: pCone3
+    100502: pCube1
+    100504: pCube10
+    100506: pCube2
+    100508: pCube3
+    100510: pCube4
+    100512: pCube5
+    100514: pCube6
+    100516: pCube7
+    100518: pCube8
+    100520: pCube9
+    100522: pCylinder1
+    100524: pCylinder2
+    100526: pCylinder3
+    100528: pHelix1
+    100530: polySurface62
+    100532: polySurface63
+    100534: polySurface64
+    100536: polySurface65
+    100538: transform1
+    100540: transform2
+    100542: transform3
+    100544: transform4
+    400000: //RootNode
+    400002: leaf:group
+    400004: leaf:group1
+    400006: leaf:group2
+    400008: leaf:group3
+    400010: leaf:group4
+    400012: leaf:group5
+    400014: leaf:group6
+    400016: leaf:group7
+    400018: leaf:group8
+    400020: leaf:group8_pasted__group4_pasted__pasted__group1_pasted__pasted__pasted__pCone1
+    400022: leaf:pasted__group
+    400024: leaf:pasted__group 1
+    400026: leaf:pasted__group 2
+    400028: leaf:pasted__group 3
+    400030: leaf:pasted__group 4
+    400032: leaf:pasted__group 5
+    400034: leaf:pasted__group 6
+    400036: leaf:pasted__group1
+    400038: leaf:pasted__group1 1
+    400040: leaf:pasted__group1 2
+    400042: leaf:pasted__group1 3
+    400044: leaf:pasted__group1 4
+    400046: leaf:pasted__group1 5
+    400048: leaf:pasted__group1 6
+    400050: leaf:pasted__group2
+    400052: leaf:pasted__group2 1
+    400054: leaf:pasted__group2 2
+    400056: leaf:pasted__group2 3
+    400058: leaf:pasted__group2 4
+    400060: leaf:pasted__group2 5
+    400062: leaf:pasted__group3
+    400064: leaf:pasted__group3 1
+    400066: leaf:pasted__group4
+    400068: leaf:pasted__group4 1
+    400070: leaf:pasted__group5
+    400072: leaf:pasted__group5 1
+    400074: leaf:pasted__group6
+    400076: leaf:pasted__group6 1
+    400078: leaf:pasted__pasted__group
+    400080: leaf:pasted__pasted__group 1
+    400082: leaf:pasted__pasted__group 10
+    400084: leaf:pasted__pasted__group 11
+    400086: leaf:pasted__pasted__group 12
+    400088: leaf:pasted__pasted__group 13
+    400090: leaf:pasted__pasted__group 2
+    400092: leaf:pasted__pasted__group 3
+    400094: leaf:pasted__pasted__group 4
+    400096: leaf:pasted__pasted__group 5
+    400098: leaf:pasted__pasted__group 6
+    400100: leaf:pasted__pasted__group 7
+    400102: leaf:pasted__pasted__group 8
+    400104: leaf:pasted__pasted__group 9
+    400106: leaf:pasted__pasted__group1
+    400108: leaf:pasted__pasted__group1 1
+    400110: leaf:pasted__pasted__group1 10
+    400112: leaf:pasted__pasted__group1 11
+    400114: leaf:pasted__pasted__group1 12
+    400116: leaf:pasted__pasted__group1 13
+    400118: leaf:pasted__pasted__group1 2
+    400120: leaf:pasted__pasted__group1 3
+    400122: leaf:pasted__pasted__group1 4
+    400124: leaf:pasted__pasted__group1 5
+    400126: leaf:pasted__pasted__group1 6
+    400128: leaf:pasted__pasted__group1 7
+    400130: leaf:pasted__pasted__group1 8
+    400132: leaf:pasted__pasted__group1 9
+    400134: leaf:pasted__pasted__group2
+    400136: leaf:pasted__pasted__group2 1
+    400138: leaf:pasted__pasted__group2 2
+    400140: leaf:pasted__pasted__group2 3
+    400142: leaf:pasted__pasted__group2 4
+    400144: leaf:pasted__pasted__group2 5
+    400146: leaf:pasted__pasted__group2 6
+    400148: leaf:pasted__pasted__group2 7
+    400150: leaf:pasted__pasted__pasted__group
+    400152: leaf:pasted__pasted__pasted__group 1
+    400154: leaf:pasted__pasted__pasted__group 2
+    400156: leaf:pasted__pasted__pasted__group 3
+    400158: leaf:pasted__pasted__pasted__group 4
+    400160: leaf:pasted__pasted__pasted__group 5
+    400162: leaf:pasted__pasted__pasted__group 6
+    400164: leaf:pasted__pasted__pasted__group 7
+    400166: leaf:pasted__pasted__pasted__group1
+    400168: leaf:pasted__pasted__pasted__group1 1
+    400170: leaf:pasted__pasted__pasted__group1 2
+    400172: leaf:pasted__pasted__pasted__group1 3
+    400174: leaf:pasted__pasted__pasted__group1 4
+    400176: leaf:pasted__pasted__pasted__group1 5
+    400178: leaf:pasted__pasted__pasted__group1 6
+    400180: leaf:pasted__pasted__pasted__group1 7
+    400182: leaf:pasted__pasted__pasted__pasted__pCone1
+    400184: leaf:pasted__pasted__pasted__pasted__pCone1 1
+    400186: leaf:pasted__pasted__pasted__pasted__pCone1 10
+    400188: leaf:pasted__pasted__pasted__pasted__pCone1 11
+    400190: leaf:pasted__pasted__pasted__pasted__pCone1 12
+    400192: leaf:pasted__pasted__pasted__pasted__pCone1 13
+    400194: leaf:pasted__pasted__pasted__pasted__pCone1 14
+    400196: leaf:pasted__pasted__pasted__pasted__pCone1 15
+    400198: leaf:pasted__pasted__pasted__pasted__pCone1 2
+    400200: leaf:pasted__pasted__pasted__pasted__pCone1 3
+    400202: leaf:pasted__pasted__pasted__pasted__pCone1 4
+    400204: leaf:pasted__pasted__pasted__pasted__pCone1 5
+    400206: leaf:pasted__pasted__pasted__pasted__pCone1 6
+    400208: leaf:pasted__pasted__pasted__pasted__pCone1 7
+    400210: leaf:pasted__pasted__pasted__pasted__pCone1 8
+    400212: leaf:pasted__pasted__pasted__pasted__pCone1 9
+    400214: leaf:pasted__pasted__pasted__pCone1
+    400216: leaf:pasted__pasted__pasted__pCone1 1
+    400218: leaf:pasted__pasted__pasted__pCone1 10
+    400220: leaf:pasted__pasted__pasted__pCone1 11
+    400222: leaf:pasted__pasted__pasted__pCone1 12
+    400224: leaf:pasted__pasted__pasted__pCone1 13
+    400226: leaf:pasted__pasted__pasted__pCone1 14
+    400228: leaf:pasted__pasted__pasted__pCone1 15
+    400230: leaf:pasted__pasted__pasted__pCone1 16
+    400232: leaf:pasted__pasted__pasted__pCone1 17
+    400234: leaf:pasted__pasted__pasted__pCone1 18
+    400236: leaf:pasted__pasted__pasted__pCone1 19
+    400238: leaf:pasted__pasted__pasted__pCone1 2
+    400240: leaf:pasted__pasted__pasted__pCone1 20
+    400242: leaf:pasted__pasted__pasted__pCone1 21
+    400244: leaf:pasted__pasted__pasted__pCone1 22
+    400246: leaf:pasted__pasted__pasted__pCone1 23
+    400248: leaf:pasted__pasted__pasted__pCone1 24
+    400250: leaf:pasted__pasted__pasted__pCone1 25
+    400252: leaf:pasted__pasted__pasted__pCone1 26
+    400254: leaf:pasted__pasted__pasted__pCone1 27
+    400256: leaf:pasted__pasted__pasted__pCone1 3
+    400258: leaf:pasted__pasted__pasted__pCone1 4
+    400260: leaf:pasted__pasted__pasted__pCone1 5
+    400262: leaf:pasted__pasted__pasted__pCone1 6
+    400264: leaf:pasted__pasted__pasted__pCone1 7
+    400266: leaf:pasted__pasted__pasted__pCone1 8
+    400268: leaf:pasted__pasted__pasted__pCone1 9
+    400270: leaf:pasted__pasted__pCone1
+    400272: leaf:pasted__pasted__pCone1 1
+    400274: leaf:pasted__pasted__pCone1 10
+    400276: leaf:pasted__pasted__pCone1 11
+    400278: leaf:pasted__pasted__pCone1 12
+    400280: leaf:pasted__pasted__pCone1 13
+    400282: leaf:pasted__pasted__pCone1 14
+    400284: leaf:pasted__pasted__pCone1 15
+    400286: leaf:pasted__pasted__pCone1 16
+    400288: leaf:pasted__pasted__pCone1 17
+    400290: leaf:pasted__pasted__pCone1 18
+    400292: leaf:pasted__pasted__pCone1 19
+    400294: leaf:pasted__pasted__pCone1 2
+    400296: leaf:pasted__pasted__pCone1 20
+    400298: leaf:pasted__pasted__pCone1 21
+    400300: leaf:pasted__pasted__pCone1 3
+    400302: leaf:pasted__pasted__pCone1 4
+    400304: leaf:pasted__pasted__pCone1 5
+    400306: leaf:pasted__pasted__pCone1 6
+    400308: leaf:pasted__pasted__pCone1 7
+    400310: leaf:pasted__pasted__pCone1 8
+    400312: leaf:pasted__pasted__pCone1 9
+    400314: leaf:pasted__pCone1
+    400316: leaf:pasted__pCone1 1
+    400318: leaf:pasted__pCone1 2
+    400320: leaf:pasted__pCone1 3
+    400322: leaf:pasted__pCone1 4
+    400324: leaf:pasted__pCone1 5
+    400326: leaf:pasted__pCone1 6
+    400328: leaf:pasted__pCone1 7
+    400330: leaf:pasted__pCylinder1
+    400332: leaf:pasted__pCylinder1 1
+    400334: leaf:pCone1
+    400336: leaf:pCylinder1
+    400338: leaf:polySurface62
+    400340: leaf:transform1
+    400342: leaf:transform10
+    400344: leaf:transform11
+    400346: leaf:transform12
+    400348: leaf:transform13
+    400350: leaf:transform14
+    400352: leaf:transform15
+    400354: leaf:transform16
+    400356: leaf:transform17
+    400358: leaf:transform18
+    400360: leaf:transform19
+    400362: leaf:transform2
+    400364: leaf:transform20
+    400366: leaf:transform21
+    400368: leaf:transform22
+    400370: leaf:transform23
+    400372: leaf:transform24
+    400374: leaf:transform25
+    400376: leaf:transform26
+    400378: leaf:transform27
+    400380: leaf:transform28
+    400382: leaf:transform29
+    400384: leaf:transform3
+    400386: leaf:transform30
+    400388: leaf:transform31
+    400390: leaf:transform32
+    400392: leaf:transform33
+    400394: leaf:transform34
+    400396: leaf:transform35
+    400398: leaf:transform36
+    400400: leaf:transform37
+    400402: leaf:transform38
+    400404: leaf:transform39
+    400406: leaf:transform4
+    400408: leaf:transform40
+    400410: leaf:transform41
+    400412: leaf:transform42
+    400414: leaf:transform43
+    400416: leaf:transform44
+    400418: leaf:transform45
+    400420: leaf:transform46
+    400422: leaf:transform47
+    400424: leaf:transform48
+    400426: leaf:transform49
+    400428: leaf:transform5
+    400430: leaf:transform50
+    400432: leaf:transform51
+    400434: leaf:transform52
+    400436: leaf:transform53
+    400438: leaf:transform54
+    400440: leaf:transform55
+    400442: leaf:transform56
+    400444: leaf:transform57
+    400446: leaf:transform58
+    400448: leaf:transform59
+    400450: leaf:transform6
+    400452: leaf:transform60
+    400454: leaf:transform61
+    400456: leaf:transform62
+    400458: leaf:transform63
+    400460: leaf:transform64
+    400462: leaf:transform65
+    400464: leaf:transform66
+    400466: leaf:transform67
+    400468: leaf:transform68
+    400470: leaf:transform69
+    400472: leaf:transform7
+    400474: leaf:transform70
+    400476: leaf:transform71
+    400478: leaf:transform72
+    400480: leaf:transform73
+    400482: leaf:transform74
+    400484: leaf:transform75
+    400486: leaf:transform76
+    400488: leaf:transform77
+    400490: leaf:transform78
+    400492: leaf:transform79
+    400494: leaf:transform8
+    400496: leaf:transform9
+    400498: pCone2
+    400500: pCone3
+    400502: pCube1
+    400504: pCube10
+    400506: pCube2
+    400508: pCube3
+    400510: pCube4
+    400512: pCube5
+    400514: pCube6
+    400516: pCube7
+    400518: pCube8
+    400520: pCube9
+    400522: pCylinder1
+    400524: pCylinder2
+    400526: pCylinder3
+    400528: pHelix1
+    400530: polySurface62
+    400532: polySurface63
+    400534: polySurface64
+    400536: polySurface65
+    400538: transform1
+    400540: transform2
+    400542: transform3
+    400544: transform4
+    2100000: lambert3
+    2100002: lambert2
+    2100004: lambert4
+    2100006: lambert1
+    2100008: lambert5
+    2100010: lambert6
+    2300000: leaf:polySurface62
+    2300002: pCone2
+    2300004: pCone3
+    2300006: pCube1
+    2300008: pCube10
+    2300010: pCube2
+    2300012: pCube3
+    2300014: pCube4
+    2300016: pCube5
+    2300018: pCube6
+    2300020: pCylinder1
+    2300022: pCylinder2
+    2300024: pHelix1
+    2300026: polySurface62
+    2300028: polySurface63
+    2300030: polySurface64
+    2300032: polySurface65
+    3300000: leaf:polySurface62
+    3300002: pCone2
+    3300004: pCone3
+    3300006: pCube1
+    3300008: pCube10
+    3300010: pCube2
+    3300012: pCube3
+    3300014: pCube4
+    3300016: pCube5
+    3300018: pCube6
+    3300020: pCylinder1
+    3300022: pCylinder2
+    3300024: pHelix1
+    3300026: polySurface62
+    3300028: polySurface63
+    3300030: polySurface64
+    3300032: polySurface65
+    4300000: pCylinder1
+    4300002: pCone2
+    4300004: pCone3
+    4300006: leaf:polySurface62
+    4300008: polySurface62
+    4300010: polySurface63
+    4300012: polySurface64
+    4300014: polySurface65
+    4300016: pCube1
+    4300018: pCube2
+    4300020: pCube3
+    4300022: pCylinder2
+    4300024: pCube4
+    4300026: pCube5
+    4300028: pCube6
+    4300030: pHelix1
+    4300032: pCube10
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 15
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

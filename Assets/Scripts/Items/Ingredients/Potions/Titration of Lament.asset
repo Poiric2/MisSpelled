@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Titration of Lament
   m_EditorClassIdentifier: 
-  name: T. of Lament
+  name: Titration of Lament
   sprite: {fileID: 21300000, guid: 6fa7fba29fb2c1642ba6ac21c13bdd94, type: 3}
   count: 0
   form: pasty

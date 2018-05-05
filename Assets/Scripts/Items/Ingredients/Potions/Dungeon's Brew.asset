@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Dungeon's Brew
   m_EditorClassIdentifier: 
-  name: Dungeon's B.
+  name: Dungeon's Brew
   sprite: {fileID: 21300000, guid: c52657e6e82415d4aac2cd770cf5e040, type: 3}
   count: 0
-  form: slippery
+  form: plastic
   destruction: pure
   red: 1
   orange: 0

@@ -17,7 +17,9 @@ public class Potion_Station : Station {
 	public List<Image> HoldingImages;
     public GameObject PotionUI;
     public GameObject Work_Item;
+    public Sprite potion_image;
 	protected bool success;
+    protected bool no_success = true;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -45,6 +47,8 @@ public class Potion_Station : Station {
 
     public override void Work(ref Ingredient ingredient)
     {
+        if (animator != null)
+            animator.SetTrigger("Job");
         for (int i = 0; i < 4; i++)
         {
             if (HoldingImages[i].sprite == null)
@@ -64,8 +68,9 @@ public class Potion_Station : Station {
     }
 
 	void attempt_brew() {
-		// check against recipes
-		foreach (Ingredient p in recipes) {
+        // check against recipes
+        no_success = true;
+        foreach (Ingredient p in recipes) {
 			success = true;
 
 			if (p.red != red) {
@@ -91,6 +96,7 @@ public class Potion_Station : Station {
 			}
 
 			if (success == true) {
+                no_success = false;
                 Ingredient tmp = Object.Instantiate(p);
                 PlaceInInventory(ref tmp);
 
@@ -103,16 +109,30 @@ public class Potion_Station : Station {
 			}
 		}
 
-		if (success == false) {
-			if (recipes.Count > 5) {
-				print("potion failed");
-				red = 0;
-				orange = 0;
-				yellow = 0;
-				green = 0;
-				blue = 0;
-				purple = 0;
-			}
+		if (no_success == true) {
+            Ingredient I_potion = ScriptableObject.CreateInstance("Ingredient") as Ingredient;
+            string I_name = "";
+            foreach(Ingredient i in ingredients)
+            {
+                I_name += i.name;
+                I_name += " ";
+            }
+            I_name += "Potion";
+            I_potion.name = I_name;
+            I_potion.red = red;
+            I_potion.orange = orange;
+            I_potion.yellow = yellow;
+            I_potion.green = green;
+            I_potion.blue = blue;
+            I_potion.purple = purple;
+            I_potion.sprite = potion_image;
+            PlaceInInventory(ref I_potion);
+			red = 0;
+			orange = 0;
+			yellow = 0;
+			green = 0;
+			blue = 0;
+			purple = 0;
 		}
         ingredients = new List<Ingredient>();
         foreach (Image i in HoldingImages)

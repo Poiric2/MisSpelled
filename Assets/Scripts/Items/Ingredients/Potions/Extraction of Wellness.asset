@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e3df736f181ed45be9065c60104f66, type: 3}
   m_Name: Extraction of Wellness
   m_EditorClassIdentifier: 
-  name: E. of Wellness
+  name: Extraction of Wellness
   sprite: {fileID: 21300000, guid: 006343172bf42904f844afa95c25d467, type: 3}
   count: 0
   form: plastic

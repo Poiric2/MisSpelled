@@ -5,7 +5,26 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - StationEffect: {instanceID: 0}
+  - source: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - bar: {instanceID: 0}
+  - progbar: {instanceID: 0}
+  - inventoryhitbox: {instanceID: 0}
+  - StationUI: {instanceID: 0}
+  - title: {instanceID: 0}
+  - dsc: {instanceID: 0}
+  - selected: {instanceID: 0}
+  - dragPrime: {instanceID: 0}
+  - dragImage: {instanceID: 0}
+  - working_image: {instanceID: 0}
+  - working_item: {instanceID: 0}
+  - item_text: {instanceID: 0}
+  - dragUI: {instanceID: 0}
+  - PotionUI: {instanceID: 0}
+  - Work_Item: {instanceID: 0}
+  - potion_image: {fileID: 21300000, guid: 6fa7fba29fb2c1642ba6ac21c13bdd94, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

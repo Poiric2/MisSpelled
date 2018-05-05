@@ -14,7 +14,7 @@ MonoBehaviour:
   name: Dungeon's Brew
   sprite: {fileID: 0}
   count: 0
-  form: slippery
+  form: plastic
   destruction: 
   red: 1
   orange: 0
