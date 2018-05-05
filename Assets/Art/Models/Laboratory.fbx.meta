@@ -13,6 +13,8 @@ ModelImporter:
     100010: ladder
     100012: polySurface10
     100014: Rug1
+    100016: polySurface10_MeshPart0
+    100018: polySurface10_MeshPart1
     400000: Cauldron1:transform1
     400002: Cauldron:transform1
     400004: Lab2
@@ -21,6 +23,8 @@ ModelImporter:
     400010: ladder
     400012: polySurface10
     400014: Rug1
+    400016: polySurface10_MeshPart0
+    400018: polySurface10_MeshPart1
     2100000: rug
     2100002: ladder2
     2100004: stones
@@ -29,14 +33,20 @@ ModelImporter:
     2300002: ladder
     2300004: polySurface10
     2300006: Rug1
+    2300008: polySurface10_MeshPart0
+    2300010: polySurface10_MeshPart1
     3300000: Lab2
     3300002: ladder
     3300004: polySurface10
     3300006: Rug1
+    3300008: polySurface10_MeshPart0
+    3300010: polySurface10_MeshPart1
     4300000: Rug1
     4300002: ladder
     4300004: polySurface10
     4300006: Lab2
+    4300008: polySurface10_MeshPart0
+    4300010: polySurface10_MeshPart1
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -81,8 +91,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
